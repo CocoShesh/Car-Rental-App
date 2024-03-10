@@ -2,7 +2,7 @@ const cars = [
   {
     id: 1,
     name: "Audi A1 S-Line",
-    src: "/public/images/Audi.jpg ",
+    src: "/images/Audi.jpg ",
     rent: "$45",
     model: "Audi",
     mark: "A1",
@@ -15,7 +15,7 @@ const cars = [
   {
     id: 2,
     name: "VW Golf 6",
-    src: "/public/images/Golf.jpg",
+    src: "/images/Golf.jpg",
     rent: "$37",
     model: "Golf 6",
     mark: "Volkswagen",
@@ -28,7 +28,7 @@ const cars = [
   {
     id: 3,
     name: "Toyota Camry",
-    src: "/public/images/toyotacamry.jpg",
+    src: "/images/toyotacamry.jpg",
     rent: "$30",
     model: "Camry",
     mark: "Toyota",
@@ -41,7 +41,7 @@ const cars = [
   {
     id: 4,
     name: "BMW 320 ModernLine",
-    src: "/public/images/Audi.jpg ",
+    src: "/images/Audi.jpg ",
     rent: "$35",
     model: "320",
     mark: "BMW",
@@ -55,7 +55,7 @@ const cars = [
   {
     id: 5,
     name: "Mercedes-Benz GLK",
-    src: "/public/images/Mercedes.jpg",
+    src: "/images/Mercedes.jpg",
     rent: "$50",
     model: "Benz GLK",
     mark: "Mercedes",
@@ -68,7 +68,7 @@ const cars = [
   {
     id: 6,
     name: "VW Passat CC",
-    src: "/public/images/Passat.jpg",
+    src: "/images/Passat.jpg",
     rent: "$25",
     model: "Passat CC",
     mark: "Volkswagen",

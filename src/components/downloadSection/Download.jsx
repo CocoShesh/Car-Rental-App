@@ -16,12 +16,12 @@ function Download() {
           <div className="flex  items-center justify-center mt-10 gap-10 max-md:flex-col max-sm:items-center max-sm:justify-center ">
             {" "}
             <img
-              src="/public/images/appstore.svg"
+              src="/images/appstore.svg"
               alt=" "
               className="object-contain w-[300px]  max-sm:w-[300px] "
             />
             <img
-              src="/public/images/googleapp.svg"
+              src="/images/googleapp.svg"
               alt=" "
               className=" max-sm:w-[300px]   w-[300px]"
             />
