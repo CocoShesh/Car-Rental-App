@@ -6,7 +6,7 @@ const Testimonials = () => {
       <section className="h-[850px] bg-[#f8f8f8] pt-28 w-full mb-10 max:sm:w-full max-sm:h-auto">
         <section className="flex flex-col items-center justify-center  text-black ">
           <h2 className="text-[22px]"> Reviewed by People</h2>
-          <h1 className="text-[54px] font-[700] max-sm:text-center">
+          <h1 className="text-[45px]  font-[700] max-sm:text-center">
             Client's Testimonials
           </h1>
           <p className="w-[680px] text-[#706f7b] font-serif text-center mt-3 max-sm:w-auto max-sm:mx-5 max-md:text-center ">

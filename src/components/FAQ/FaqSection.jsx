@@ -80,7 +80,7 @@ function FaqSection() {
 
   return (
     <>
-      <section className="faq-section  flex flex-col items-center justify-center mb-20 ">
+      <section className="faq-section  flex flex-col items-center  justify-center mb-20 max-sm:px-5 ">
         <section className="flex flex-col items-center justify-center text-black max-md:w-full max-md:text-center">
           <h2 className="text-[22px] font-bold"> FAQ </h2>
           <h1 className="text-[42px]">Frequently Asked Questions</h1>
@@ -101,7 +101,7 @@ function FaqSection() {
               style={{
                 border: "none",
 
-                boxShadow: "0 10px 15px 0 rgba(0,0,0,.1)",
+                boxShadow: "1px 1px 1px 1px rgba(0,0,0,.1)",
                 paddingTop: "10px",
                 backgroundColor:
                   clickedPanel === item.key ? "#ff4d30" : "inherit",

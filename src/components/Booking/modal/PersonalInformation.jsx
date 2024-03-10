@@ -22,7 +22,7 @@ const PersonalInformation = () => {
                 name=""
                 id="Fname"
                 placeholder="Enter your first name"
-                className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+                className="w-full h-[50px] max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
               />
               <br />
               {message}
@@ -34,7 +34,7 @@ const PersonalInformation = () => {
                 name=""
                 id="Lname"
                 placeholder="Enter your last name"
-                className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+                className="w-full h-[50px] max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
               />
               <br />
               {message}
@@ -48,7 +48,7 @@ const PersonalInformation = () => {
                 name=""
                 id="Phone#"
                 placeholder="Enter your phone number"
-                className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+                className="w-full h-[50px] max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
               />{" "}
               <br />
               {message}
@@ -60,7 +60,7 @@ const PersonalInformation = () => {
                 name=""
                 id="Age"
                 placeholder="Enter your age"
-                className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+                className="w-full h-[50px] max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
               />{" "}
               <br />
               {message}
@@ -73,7 +73,7 @@ const PersonalInformation = () => {
             type="email"
             id="Email"
             placeholder="Enter your email address"
-            className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+            className="w-full h-[50px]  max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
           />{" "}
           <br />
           {message} <br />
@@ -83,7 +83,7 @@ const PersonalInformation = () => {
             type="text"
             id="Address"
             placeholder="Enter your address"
-            className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+            className="w-full h-[50px]  max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
           />
           {message}
         </section>
@@ -94,7 +94,7 @@ const PersonalInformation = () => {
               type="email"
               id="City  "
               placeholder="Enter your city"
-              className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+              className="w-full h-[50px]  max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
             />{" "}
             <br />
             {message}
@@ -105,7 +105,7 @@ const PersonalInformation = () => {
               type="text"
               id="Zip-Code"
               placeholder="Enter your zip code"
-              className="w-full h-[50px] bg-[#dbdbdb] pl-5"
+              className="w-full h-[50px] max-sm:placeholder:text-xs bg-[#dbdbdb] pl-5"
             />
             {message}
           </section>
@@ -114,8 +114,8 @@ const PersonalInformation = () => {
           <input type="checkbox" id="check" />{" "}
           <label htmlFor="check">Please send me latest news and updates</label>
         </section>
-        <section className=" float-right pt-12 pr-5 mt-5  bg-[#dbdbdb] w-full h-[150px]">
-          <section className="float-right">
+        <section className=" pt-12 pr-5 mt-5  bg-[#dbdbdb] w-full h-[150px]">
+          <section className=" flex items-center justify-center ml-5">
             <button className="bg-[#fe3516] text-white w-[250px] h-[50px] text-[20px] font-extrabold font-serif items shadow-lg rounded-md">
               Reserve Now
             </button>

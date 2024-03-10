@@ -76,8 +76,8 @@ function Pick() {
               <div key={item.id}>
                 <div className="h-[50px] bg-[#ff4d30] flex items-center justify-center px-5 text-white">
                   <h1 className="text-[28px]">{item.rent} </h1>{" "}
-                  <span className="text-[20px]  font-mono font-bold  ml-3">
-                    / rent per day{" "}
+                  <span className="text-[20px] max-sm:text-center max-sm:text-[14px] font-mono font-bold  ml-3">
+                    / rent per day
                   </span>
                 </div>
                 <section className="flex  border-x-2 border-b-2   border-slate-300">

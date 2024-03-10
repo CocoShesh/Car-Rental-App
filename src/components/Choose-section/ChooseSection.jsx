@@ -7,7 +7,7 @@ function ChooseSection() {
         <section className="flex items-center justify-center max-sm:w-full ">
           <img src="/public/images/choose.png" alt="" />
         </section>
-        <section className="lg:flex mx-10 justify-between mt-32  items-center gap-10   max-sm:flex-col max-sm:mx- max-sm:text-center">
+        <section className="lg:flex mx-5 justify-between mt-32  items-center gap-10   max-sm:flex-col max-sm:mx- max-sm:text-center">
           <section className=" text-black lg:w-[700px] max-sm:w-full max-sm:h-[550px] mb-10 ">
             <h2 className="text-[22px]">Why Choose Us</h2>
             <h1 className="text-[42px]  leading-[50px] ">
@@ -25,12 +25,12 @@ function ChooseSection() {
               Find Details <span className="text-2xl mb-1">&gt; </span>
             </button>
           </section>
-          <section className="flex flex-col w-full  items-center justify-center max-sm:w-full lg:mb-10 ">
+          <section className="flex flex-col w-full max-sm:mt-56  items-center justify-center max-sm:w-full lg:mb-10 ">
             {choose.map(item => {
               return (
                 <section
                   key={item.id}
-                  className="flex  w-full gap-4 mb-5 max-sm:object-cover"
+                  className="flex max-sm:flex-col max-sm:mt-5 w-full gap-4 mb-5 max-sm:object-cover"
                 >
                   {" "}
                   <img
