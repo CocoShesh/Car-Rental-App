@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import Hero from "./hero-container/hero";
+import Hero from "./hero-container/Hero";
 import BookingCar from "./Booking/BookingCar";
 import Plan from "./plan-section/Plan";
 import Pick from "./pick-section/Pick";
