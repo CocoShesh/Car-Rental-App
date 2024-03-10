@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: white;
+}
+
+.custom-shadow {
+  box-shadow: -1px 0px 14px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 14px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 14px -6px rgba(0, 0, 0, 0.75);
+}
+
+.ant-space {
+  width: 100%;
+}
