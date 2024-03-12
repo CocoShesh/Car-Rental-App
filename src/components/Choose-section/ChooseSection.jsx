@@ -3,9 +3,9 @@ import choose from "./data";
 function ChooseSection() {
   return (
     <>
-      <section className="mb-20 flex justify-center items-center flex-col ">
+      <section className="mb-20 flex justify-center items-center flex-col lg:px-10 ">
         <section className="flex items-center justify-center max-sm:w-full ">
-          <img src="/public/images/choose.png" alt="" />
+          <img src="/images/choose.png" alt="" />
         </section>
         <section className="lg:flex mx-5 justify-between mt-32  2xl:ml-44 items-center gap-10   max-sm:flex-col max-sm:mx- max-sm:text-center">
           <section className=" text-black lg:w-[700px] max-sm:w-full 2xl:mr-28 max-sm:h-[550px] mb-10 ">
