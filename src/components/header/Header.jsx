@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 import "./stle.css";
 import { Drawer } from "antd";
 const list = [
@@ -48,7 +49,7 @@ function Header() {
     <>
       <header>
         <nav className=" mx-10  flex items-center  justify-between max-md:relative md:w-auto max-md:mx-5  text-gray-900 ">
-          <section className="md:flex max-lg:flex max-lg:items-center max-lg:justify-between max-lg:w-full  max-sm:flex max-sm:items-center max-sm:w-full max-sm:justify-between md:items-center md:justify-between max-md:w-full ">
+          <section className="md:flex max-lg:flex max-lg:items-center max-lg:justify-between max-lg:w-full   max-sm:flex max-sm:items-center max-sm:w-full max-sm:justify-between md:items-center md:justify-between max-md:w-full ">
             <img
               src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
               alt=""
@@ -61,13 +62,13 @@ function Header() {
           </section>
 
           <section className="max-lg:hidden    ">
-            <ul className="flex  xl:text-sm lg:text-sm  lg:gap-5  lg:mr-20 font-bold max-md:absolute max-md:flex-col max-md:top-[100px] max-md:w-full max-md:left-[65%] max-md:text-white ">
+            <ul className="flex  xl:text-sm lg:text-sm 2xl:text-lg 3xl:text-2xl lg:gap-5  lg:mr-20 font-bold max-md:absolute max-md:flex-col max-md:top-[100px] max-md:w-full max-md:left-[65%] max-md:text-white ">
               {list.map(item => (
                 <li
                   key={item.id}
                   className=" hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer"
                 >
-                  <a href={item.path}>{item.name}</a>
+                  <Link to={item.path}>{item.name}</Link>
                 </li>
               ))}
             </ul>

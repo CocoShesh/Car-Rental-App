@@ -8,7 +8,8 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 22rem;
+  background-size: 100%;
+  height: 21rem;
 
   position: relative;
   width: 100%;

@@ -21,7 +21,7 @@ const ContactUs = () => {
         </p>
       </section>
       <section
-        className="bg-white flex gap-[150px] py-32 px-20 text-black  max-md:flex-col max-md:w-full max-md:px-5"
+        className="bg-white flex gap-[150px] py-32 px-20 items-center justify-center  text-black  max-md:flex-col max-md:w-full max-md:px-5"
         style={{
           backgroundImage:
             "url(https://car-rental-ten.vercel.app/static/media/bg-contact.c178c6db0f988d408d94.png)",
@@ -31,7 +31,7 @@ const ContactUs = () => {
           backgroundPositionY: "30%",
         }}
       >
-        <section className="w-[450px] max-md:w-auto">
+        <section className="w-[450px] max-md:w-auto max-md:mx-10 ">
           <section>
             <h1 className="text-[42px] mb-5">Need additional information?</h1>
             <p className="text-[#706f7b] text-[16px] font-sans mb-10 text-justify font-medium">

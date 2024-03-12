@@ -16,14 +16,14 @@ const Team = () => {
           <span> / </span> Our Team
         </p>
       </section>
-      <section className="grid lg:grid-cols-3 w-full lg:px-20 gap-10 bg-white pt-32 sm:grid-cols-1 md:grid-cols-2 place-content-center sm:px-3">
+      <section className="grid lg:grid-cols-3  lg:px-20 gap-10 w-full bg-white pt-32 sm:grid-cols-1 md:grid-cols-2 place-content-center sm:px-3">
         {employees.map(employee => {
           return (
             <section
               key={employee.id}
               className="shadow-lg flex flex-col items-center justify-center w-auto rounded-t-lg"
             >
-              <div className="bg-[#f6f6f6]">
+              <div className="">
                 <img
                   src={employee.src}
                   alt={employee.Name}

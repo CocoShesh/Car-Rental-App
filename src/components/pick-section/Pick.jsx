@@ -25,7 +25,7 @@ function Pick() {
 
   return (
     <>
-      <section className="h-content flex flex-col items-center mb-44 w-full">
+      <section className="h-content flex flex-col items-center justify-center mb-44 w-full">
         <section className="mb-20 text-center">
           <h2 className="text-[24px] text-black"> Vehicle Models </h2>
           <h1 className="text-[48px] text-black">Our rental fleet</h1>
@@ -37,7 +37,7 @@ function Pick() {
 
         <section
           data-aos="fade-right"
-          className="lg:flex gap-20 justify-between w-full px-10 items-center max-sm:w-full  max-sm:flex-col max-sm:items-center max-sm:justify-center "
+          className="lg:flex gap-20 justify-between w-full px-20 2xl:px-24 items-center max-sm:w-full   max-sm:flex-col max-sm:items-center max-sm:justify-center "
         >
           <section className="flex flex-col  items-center justify-center ">
             {cars.map(item => (
@@ -70,13 +70,13 @@ function Pick() {
           <section
             data-aos="fade-left"
             data-aos-delay="300"
-            className=" w-full h-[400px]  flex items-center justify-center mb-5   "
+            className=" lg:w-fit  max-sm:w-full h-[400px]  flex items-center justify-center mb-5   "
           >
             {filteredCars.map(item => (
               <div key={item.id}>
                 <div className="h-[50px] bg-[#ff4d30] flex items-center justify-center px-5 text-white">
                   <h1 className="text-[28px]">{item.rent} </h1>{" "}
-                  <span className="text-[20px] max-sm:text-center max-sm:text-[14px] font-mono font-bold  ml-3">
+                  <span className="text-[16px] max-sm:text-center max-sm:text-[14px] font-mono font-bold  ml-3">
                     / rent per day
                   </span>
                 </div>

@@ -20,7 +20,7 @@ const Vehicle = () => {
         </p>
       </section>
       <section className="bg-white pt-3 ">
-        <section className="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-3  gap-5 max-sm:mx-5 2xl:grid-cols-4  mx-10   ">
+        <section className="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-5 xl:grid-cols-3  gap-5 max-sm:mx-5 2xl:grid-cols-4  mx-10   ">
           {cars.map(item => {
             return (
               <section key={item.id} className="h-fit  pb-8  rounded shadow-lg">
@@ -64,8 +64,7 @@ const Vehicle = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-full  mt-10  h-0 border-[1px] border-[#777777]"></div>
-                <button className="w-[300px] mx-5  mt-2 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
+                <button className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
                   {" "}
                   Book Ride
                 </button>
