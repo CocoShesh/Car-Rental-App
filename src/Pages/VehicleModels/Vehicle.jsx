@@ -64,10 +64,12 @@ const Vehicle = () => {
                     </div>
                   </div>
                 </div>
-                <button className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
-                  {" "}
-                  Book Ride
-                </button>
+                <section className="flex items-center justify-center">
+                  <button className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
+                    {" "}
+                    Book Ride
+                  </button>
+                </section>
               </section>
             );
           })}
