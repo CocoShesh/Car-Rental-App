@@ -77,7 +77,7 @@ const cars = [
     rating: "4/5",
     type: "Manual",
     gas: "Diesel",
-    src: "/images/Passat-box.png",
+    src: "/images/passat-box.png",
     icon: <LiaCarSideSolid className="text-[30px]" />,
     manual: <GiSteeringWheel className="text-[30px]" />,
     gas_icon: <BiGasPump className="text-[30px]" />,
