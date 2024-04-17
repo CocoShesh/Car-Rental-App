@@ -23,7 +23,8 @@ function Hero() {
             </p>
             <section className="flex gap-5   max-sm:items-center max-sm:justify-center max-sm:w-full">
               <button className="w-[200px] max-sm:w-full  h-[70px] rounded bg-[#ff4d30] text-white font-bold items-center justify-center gap-2 flex shadow-xl  ">
-                Book Ride <AiOutlineCheckCircle className="mt-1 text-xl" />
+                <a href="#booking">Book Ride </a>{" "}
+                <AiOutlineCheckCircle className="mt-1 text-xl" />
               </button>
               <button className="w-[200px] max-sm:w-full  h-[70px]  text-[16px] rounded bg-black text-white font-bold items-center justify-center gap-2 flex shadow-xl hover:bg-white hover:text-black border-2 border-black transition duration-500 ease-in-out cursor-pointer">
                 Learn More <FaGreaterThan className="mt-1" />
