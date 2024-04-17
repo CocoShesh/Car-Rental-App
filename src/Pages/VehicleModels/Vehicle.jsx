@@ -28,6 +28,7 @@ const Vehicle = () => {
                   src={item.src}
                   alt={item.Name}
                   className="h-[350px] w-full mb-5  rounded-t-lg"
+                  loading="lazy | eager"
                 />
 
                 <div className="flex justify-between text-black px-5 ">
