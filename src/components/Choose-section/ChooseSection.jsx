@@ -8,7 +8,7 @@ function ChooseSection() {
           <img src="/images/choose.png" alt="" />
         </section>
         <section className="lg:flex mx-5 justify-between mt-32  2xl:ml-44 items-center gap-10   max-sm:flex-col max-sm:mx- max-sm:text-center">
-          <section className=" text-black lg:w-[700px] max-sm:w-full 2xl:mr-28 max-sm:h-[550px] mb-10 ">
+          <section className=" text-black lg:w-[700px] max-sm:w-full 2xl:mr-28 max-sm:h-fit mb-10 ">
             <h2 className="text-[22px]">Why Choose Us</h2>
             <h1 className="text-[42px]  leading-[50px] ">
               Best valued deals you will ever find
@@ -25,18 +25,18 @@ function ChooseSection() {
               Find Details <span className="text-2xl mb-1">&gt; </span>
             </button>
           </section>
-          <section className="flex flex-col w-full max-sm:mt-56  items-center justify-center max-sm:w-full lg:mb-10 ">
+          <section className="flex flex-col w-full max-md:mt-20  items-center justify-center max-sm:w-full lg:mb-10 ">
             {choose.map(item => {
               return (
                 <section
                   key={item.id}
-                  className="flex max-sm:flex-col max-sm:mt-5 w-full gap-4 mb-5 max-sm:object-cover"
+                  className="flex max-sm:flex-col  items-center max-sm:mt-5 w-full gap-4 mb-5 "
                 >
                   {" "}
                   <img
                     src={item.src}
                     alt={item.header}
-                    className="max-sm:object-contain"
+                    className="object-contain max-md:h-[150px] w-[150px]"
                   />
                   <section>
                     <h1 className="text-[24px] mb-2 text-black">
