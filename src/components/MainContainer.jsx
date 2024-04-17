@@ -13,16 +13,18 @@ import Download from "./downloadSection/Download";
 function MainContainer() {
   return (
     <>
-      <Header />
-      <Hero />
-      <BookingCar />
-      <Plan />
-      <Pick />
-      <Banner />
-      <ChooseSection />
-      <Testimonials />
-      <FaqSection />
-      <Download />
+      <main className=" flex flex-col  w-full border-4 border-black  items-center justify-center px-5">
+        <Header />
+        <Hero />
+        <BookingCar />
+        <Plan />
+        <Pick />
+        <Banner />
+        <ChooseSection />
+        <Testimonials />
+        <FaqSection />
+        <Download />
+      </main>
     </>
   );
 }
