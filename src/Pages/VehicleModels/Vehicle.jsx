@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
-
+import { Link } from "react-router-dom";
 const Vehicle = () => {
   return (
     <>
@@ -67,7 +67,7 @@ const Vehicle = () => {
                 <section className="flex items-center justify-center">
                   <button className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
                     {" "}
-                    Book Ride
+                    <Link to="/Contact"> Book Ride </Link>
                   </button>
                 </section>
               </section>
