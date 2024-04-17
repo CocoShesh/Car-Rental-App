@@ -47,37 +47,39 @@ function Header() {
 
   return (
     <>
-      <header className="w-full flex items-center justify-between px-10 h-[100px]">
-        <section className="max-xl:flex max-xl:items-center max-xl:justify-between max-xl:w-full">
-          <img
-            src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
-            alt=""
-            className="w-[150px] h-full  object-contain  "
-          />
-          <GiHamburgerMenu
-            onClick={showDrawer}
-            className="max-xl:visible  xl:hidden text-3xl  text-black cursor-pointer"
-          />
-        </section>
-        <ul className=" flex gap-5 max-xl:hidden">
-          {list.map(item => {
-            return (
-              <li
-                key={item.id}
-                className=" hover:text-[#ff4d30] text-black transition duration-500 ease-in-out cursor-pointer  font-seif text-lg  leading-10 font-bold"
-              >
-                <Link to={item.path}>{item.name}</Link>
-              </li>
-            );
-          })}
-        </ul>
-        <section className="flex items-center gap-5 max-xl:hidden">
-          <button className="font-bold w-[150px]  h-10  text-xl  rounded font-serif hover:text-[#ff4d30] transition duration-500 ease-in-out ">
-            Sign In
-          </button>
-          <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
-            Register
-          </button>
+      <header className="w-full flex items-center 2xl:justify-center justify-between px-10 h-[100px]  ">
+        <section className=" w-full 2xl:w-[1440px] flex justify-between">
+          <section className="max-xl:flex max-xl:items-center max-xl:justify-between max-xl:w-full">
+            <img
+              src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
+              alt=""
+              className="w-[150px] h-full  object-contain  "
+            />
+            <GiHamburgerMenu
+              onClick={showDrawer}
+              className="max-xl:visible  xl:hidden text-3xl  text-black cursor-pointer"
+            />
+          </section>
+          <ul className=" flex gap-5 max-xl:hidden">
+            {list.map(item => {
+              return (
+                <li
+                  key={item.id}
+                  className=" hover:text-[#ff4d30] text-black transition duration-500 ease-in-out cursor-pointer  font-seif text-lg  leading-10 font-bold"
+                >
+                  <Link to={item.path}>{item.name}</Link>
+                </li>
+              );
+            })}
+          </ul>
+          <section className="flex items-center gap-5 max-xl:hidden">
+            <button className="font-bold w-[150px]  h-10  text-xl  rounded font-serif hover:text-[#ff4d30] transition duration-500 ease-in-out ">
+              Sign In
+            </button>
+            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
+              Register
+            </button>
+          </section>
         </section>
       </header>
       <Drawer placement="left" onClose={onClose} open={open} width={300}>
