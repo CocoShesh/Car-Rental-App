@@ -3,7 +3,7 @@ import profile from "./data.jsx";
 const Testimonials = () => {
   return (
     <>
-      <section className="h-[850px] bg-[#f8f8f8] pt-28 w-full mb-10 max:sm:w-full max-sm:h-auto">
+      <section className="h-fit bg-[#f8f8f8] py-28 w-full mb-10 max:sm:w-full max-sm:h-auto">
         <section className="flex flex-col items-center justify-center  text-black ">
           <h2 className="text-[22px]"> Reviewed by People</h2>
           <h1 className="text-[45px]  font-[700] max-sm:text-center">
@@ -16,7 +16,7 @@ const Testimonials = () => {
             experiences with you.
           </p>
         </section>
-        <section className="flex gap-5 items-center justify-center 2xl:gap-20  px-5 mt-20 max-sm:w-full  max-sm:flex-col max-sm:mx-0  ">
+        <section className="flex max-md:flex-col gap-5 items-center justify-center 2xl:gap-20  px-5 mt-20 max-sm:w-full  max-sm:flex-col max-sm:mx-0  ">
           {profile.map(items => {
             return (
               <section

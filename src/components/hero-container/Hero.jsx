@@ -11,7 +11,7 @@ function Hero() {
             src="	https://car-rental-ten.vercel.app/static/media/main-car.9b30faa59387879fa060.png"
             className="max-w-xl  max-sm:max-w-xs rounded-lg 2xl:max-w-3xl "
           />
-          <div className="text-black pr-4 ml-10">
+          <div className="text-black pr-4 ml-5 ">
             <h2 className="font-bold text-2xl"> Plan your trip now</h2>
             <h1 className="font-bold text-6xl 2xl:text-8xl mb-7 mt-2 max-md:text-[52px] ">
               Save <span className="text-orange-500">big </span> with our car

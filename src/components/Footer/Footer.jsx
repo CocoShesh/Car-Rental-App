@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 function Footer() {
   return (
     <>
-      <section className="grid grid-cols-4  gap-14 pt-10 pb-20  mx-10 text-black max-md:grid-cols-1 ">
+      <section className="grid lg:grid-cols-4  gap-14 pt-10 pb-20  mx-10 text-black md:grid-cols-2 sm:grid-cols-1 ">
         <section>
           <h1 className="text-[24px] mb-5"> CAR Rental</h1>
           <p className="text-[#706f7b] font-serif mb-10">

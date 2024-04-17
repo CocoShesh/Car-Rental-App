@@ -80,7 +80,7 @@ function FaqSection() {
 
   return (
     <>
-      <section className="faq-section  flex flex-col items-center  justify-center mb-20 max-sm:px-5 ">
+      <section className="faq-section  flex flex-col items-center w-full  justify-center mb-20 max-lg:px-5 ">
         <section className="flex flex-col items-center justify-center text-black max-md:w-full max-md:text-center">
           <h2 className="text-[22px] font-bold"> FAQ </h2>
           <h1 className="text-[42px]">Frequently Asked Questions</h1>
@@ -92,7 +92,7 @@ function FaqSection() {
         <Collapse
           accordion
           expandIconPosition="end"
-          className="w-[900px] text-lg  bg-white border-none shadow-2xl  mt-20  max-md:w-auto max-md:mx-auto"
+          className="w-[900px] text-lg  bg-white border-none shadow-2xl  mt-20  max-lg:w-full "
         >
           {items.map(item => (
             <Panel
