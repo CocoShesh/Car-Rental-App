@@ -5,7 +5,7 @@ import { FaGreaterThan } from "react-icons/fa";
 function Hero() {
   return (
     <>
-      <div className="hero min-h-screen">
+      <div className="hero h-fit mb-20 mt-20">
         <div className="hero-content flex-col lg:flex-row-reverse max-w-[100rem] ">
           <img
             src="	https://car-rental-ten.vercel.app/static/media/main-car.9b30faa59387879fa060.png"
