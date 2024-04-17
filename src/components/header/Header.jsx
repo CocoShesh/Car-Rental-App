@@ -56,7 +56,7 @@ function Header() {
           />
           <GiHamburgerMenu
             onClick={showDrawer}
-            className="max-xl:visible  xl:hidden text-3xl "
+            className="max-xl:visible  xl:hidden text-3xl  text-black cursor-pointer"
           />
         </section>
         <ul className=" flex gap-5 max-xl:hidden">
@@ -64,7 +64,7 @@ function Header() {
             return (
               <li
                 key={item.id}
-                className=" hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer  font-seif text-lg  leading-10 font-bold"
+                className=" hover:text-[#ff4d30] text-black transition duration-500 ease-in-out cursor-pointer  font-seif text-lg  leading-10 font-bold"
               >
                 <Link to={item.path}>{item.name}</Link>
               </li>
@@ -94,7 +94,7 @@ function Header() {
           </ul>
         </section>
         <section className=" flex flex-col items-center  mt-[13rem]  ">
-          <button className="font-bold w-[150px] h-[50px] bg-white  text-xl mb-5 rounded font-serif shadow-xl ">
+          <button className="font-bold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded font-serif shadow-xl ">
             {" "}
             Sign In
           </button>
