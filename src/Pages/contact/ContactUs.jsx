@@ -21,7 +21,7 @@ const ContactUs = () => {
         </p>
       </section>
       <section
-        className="bg-white flex gap-[150px] py-32 px-20 items-center justify-center  text-black  max-md:flex-col max-md:w-full max-md:px-5"
+        className="bg-white flex gap-[150px] py-32 px-20 items-center justify-center  text-black  max-lg:flex-col max-md:w-full max-md:px-5"
         style={{
           backgroundImage:
             "url(https://car-rental-ten.vercel.app/static/media/bg-contact.c178c6db0f988d408d94.png)",
