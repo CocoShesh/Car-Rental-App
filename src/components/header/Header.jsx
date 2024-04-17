@@ -48,7 +48,7 @@ function Header() {
   return (
     <>
       <header className="w-full flex items-center 2xl:justify-center justify-between px-10 h-[100px]  ">
-        <section className=" w-full 2xl:w-[1440px] flex justify-between">
+        <section className=" w-full 2xl:w-[1440px] flex justify-between items-centern">
           <section className="max-xl:flex max-xl:items-center max-xl:justify-between max-xl:w-full">
             <img
               src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
@@ -60,7 +60,7 @@ function Header() {
               className="max-xl:visible  xl:hidden text-3xl  text-black cursor-pointer"
             />
           </section>
-          <ul className=" flex gap-5 max-xl:hidden">
+          <ul className=" flex items-center gap-5 max-xl:hidden">
             {list.map(item => {
               return (
                 <li
