@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
-import "./stle.css";
+import "./style.css";
 import { Drawer } from "antd";
 const list = [
   {
@@ -48,8 +48,8 @@ function Header() {
 
   return (
     <>
-      <header className="w-full flex items-center 2xl:justify-center justify-between px-10 h-[100px]  ">
-        <section className=" w-full 2xl:w-[1440px] flex justify-between items-centern">
+      <header className="w-full flex items-center 2xl:justify-center justify-between lg:px-10  max-lg:px-5  h-[100px]  ">
+        <section className=" w-full 2xl:w-[1500px] flex justify-between items-centern">
           <section className="max-xl:flex max-xl:items-center max-xl:justify-between max-xl:w-full">
             <Link to="/">
               <img
@@ -90,30 +90,32 @@ function Header() {
         </section>
       </header>
       <Drawer placement="left" onClose={onClose} open={open} width={300}>
-        <section className="px-10 tracking-wides mt-5">
-          <ul>
-            {list.map(item => (
-              <li
-                key={item.id}
-                className={` ${
-                  location.pathname === item.path
-                    ? "text-[#ff4d30]"
-                    : "text-white"
-                } hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer  font-seif text-xl  leading-10 font-bold  `}
-              >
-                <Link to={item.path}>{item.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-        <section className=" flex flex-col items-center  mt-[13rem]  ">
-          <button className="font-bold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded font-serif shadow-xl ">
-            {" "}
-            Sign In
-          </button>
-          <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
-            Register
-          </button>
+        <section className=" flex flex-col justify-between">
+          <section className="px-10 tracking-wides mt-5">
+            <ul>
+              {list.map(item => (
+                <li
+                  key={item.id}
+                  className={` ${
+                    location.pathname === item.path
+                      ? "text-[#ff4d30]"
+                      : "text-white"
+                  } hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer  font-seif text-xl  leading-10 font-bold  `}
+                >
+                  <Link to={item.path}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className=" flex flex-col items-center  mt-[13rem]  ">
+            <button className="font-bold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded font-serif shadow-xl ">
+              {" "}
+              Sign In
+            </button>
+            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
+              Register
+            </button>
+          </section>
         </section>
       </Drawer>
     </>
