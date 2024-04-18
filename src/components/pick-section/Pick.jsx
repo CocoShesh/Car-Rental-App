@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import cars from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useScrollToTop from "../../Hooks/UseScrollToTop";
 const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 
 function Pick() {
+  const navigate = useNavigate();
+  const scrollToTop = useScrollToTop();
   const [filterCar, setFilterCar] = useState("Audi A1 S-Line");
 
   const handleCarSelection = carName => {
@@ -53,12 +56,10 @@ function Pick() {
             ))}
           </section>
 
-          <section
-            data-aos="flip-up"
-            className="flex-col lg:w-screen ml-10 max-sm:ml-0  mt-20 items-center flex max-sm:w-full  mb-20 justify-center "
-          >
+          <section className="flex-col lg:w-screen ml-10 max-sm:ml-0  mt-20 items-center flex max-sm:w-full  mb-20 justify-center ">
             {filteredCars.map(image => (
               <img
+                data-aos="flip-up"
                 key={image.id}
                 src={image.src}
                 alt=""
@@ -70,6 +71,7 @@ function Pick() {
           <section
             data-aos="fade-left"
             data-aos-delay="300"
+            data-aos-easing="ease-in-out"
             className=" lg:w-fit  max-sm:w-full h-[400px]  flex items-center justify-center mb-5   "
           >
             {filteredCars.map(item => (
@@ -118,7 +120,10 @@ function Pick() {
                     </div>
                   </div>
                 </section>
-                <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95">
+                <button
+                  onClick={scrollToTop}
+                  className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95"
+                >
                   Reserve Now
                 </button>
               </div>
