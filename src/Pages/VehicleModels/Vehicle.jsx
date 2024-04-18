@@ -23,11 +23,14 @@ const Vehicle = () => {
           <span> / </span> Vechicle Models
         </p>
       </section>
-      <section className="bg-white pt-3 ">
-        <section className="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-5 xl:grid-cols-3  gap-5 max-sm:mx-5 2xl:grid-cols-4  mx-10   ">
+      <section className="bg-white pt-3  px-5 my-10 ">
+        <section className="grid  sm:grid-cols-1 md:grid-cols-2   lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-5 xl:grid-cols-3  gap-5   2xl:grid-cols-4  max-sm:w-full   ">
           {cars.map(item => {
             return (
-              <section key={item.id} className="h-fit  pb-8  rounded shadow-lg">
+              <section
+                key={item.id}
+                className="h-fit  py-8  px-5    rounded shadow shadow-gray-500"
+              >
                 <img
                   src={item.src}
                   alt={item.Name}
@@ -44,7 +47,7 @@ const Vehicle = () => {
                   <p className=" ml-auto text-[18px] font-sans">per day</p>
                 </div>
 
-                <div className="flex justify-between px-5 pt-10 text-[#777777]">
+                <div className="flex justify-between px-5 pt-10 text-[#777777] max-sm:w-full">
                   <div className="flex items-center gap-5">
                     <span>{item.icon} </span>{" "}
                     <p className="text-xl"> {item.model}</p>
@@ -72,7 +75,7 @@ const Vehicle = () => {
                 <section className="flex items-center justify-center">
                   <button
                     onClick={scrollToTop}
-                    className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90"
+                    className="w-[300px] mx-5  max-md:w-full mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90"
                   >
                     {" "}
                     <Link to="/Contact"> Book Ride </Link>
