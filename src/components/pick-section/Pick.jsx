@@ -119,7 +119,7 @@ function Pick() {
                   </div>
                 </section>
                 <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95">
-                  Reserve Now
+                  <a href="#booking"> Reserve Now</a>
                 </button>
               </div>
             ))}
