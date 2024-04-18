@@ -21,10 +21,8 @@ function App() {
           <Route path="/Our-Team" element={<Team />}></Route>
           <Route path="/Contact" element={<ContactUs />}></Route>
         </Routes>
-        <section className="pt-20 bg-white">
-          <Banner />
-          <Footer />
-        </section>
+        <Banner />
+        <Footer />
       </BrowserRouter>
     </>
   );
