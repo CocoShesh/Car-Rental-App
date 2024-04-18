@@ -7,6 +7,7 @@ const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 
 function Pick() {
   const [filterCar, setFilterCar] = useState("Audi A1 S-Line");
+  const [loading, setLoading] = useState(true);
 
   const handleCarSelection = carName => {
     setFilterCar(carName);
@@ -19,9 +20,15 @@ function Pick() {
       return car.name === filterCar;
     }
   });
+
   useEffect(() => {
     AOS.init();
-  }, []);
+    setLoading(true); // Set loading state to true initially
+  }, [filterCar]); // Add filterCar as a dependency
+
+  useEffect(() => {
+    setLoading(false); // Set loading state to false when images finish loading
+  }, [filteredCars]); // Add filteredCars as a dependency
 
   return (
     <>
@@ -39,6 +46,7 @@ function Pick() {
           data-aos="fade-right"
           className="lg:flex gap-20 justify-between w-full px-20 2xl:px-24 items-center max-sm:w-full   max-sm:flex-col max-sm:items-center max-sm:justify-center "
         >
+          {loading && <div>Loading...</div>}
           <section className="flex flex-col  items-center justify-center ">
             {cars.map(item => (
               <button
