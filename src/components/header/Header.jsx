@@ -93,7 +93,11 @@ function Header() {
             {list.map(item => (
               <li
                 key={item.id}
-                className=" hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer text-white font-seif text-xl  leading-10 font-bold  "
+                className={` ${
+                  location.pathname === item.path
+                    ? "text-[#ff4d30]"
+                    : "text-white"
+                } hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer  font-seif text-xl  leading-10 font-bold  `}
               >
                 <Link to={item.path}>{item.name}</Link>
               </li>
