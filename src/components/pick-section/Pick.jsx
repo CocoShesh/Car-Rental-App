@@ -30,7 +30,7 @@ function Pick() {
         <section className="mb-20 text-center">
           <h2 className="text-[24px] text-black"> Vehicle Models </h2>
           <h1 className="text-[48px] text-black">Our rental fleet</h1>
-          <p className="w-[500px] text-[#706f7b] font-sans font-bold max-md:w-auto">
+          <p className="w-[500px] text-[#706f7b] font-sans font-bold max-md:w-auto max-sm:px-3">
             Choose from a variety of our amazing vehicles to rent for your next
             adventure or business trip
           </p>
@@ -70,11 +70,11 @@ function Pick() {
             data-aos="fade-left"
             data-aos-delay="300"
             data-aos-easing="ease-in-out"
-            className=" lg:w-fit  max-sm:w-full h-[400px]  flex items-center justify-center mb-5   "
+            className=" lg:w-fit  max-sm:w-full h-[400px] flex items-center justify-center mb-5   "
           >
             {filteredCars.map(item => (
               <div key={item.id}>
-                <div className="h-[50px] bg-[#ff4d30] flex items-center justify-center px-5 text-white">
+                <div className="h-[50px] bg-[#ff4d30] flex items-center justify-center px-5 max-sm:w-full   text-white">
                   <h1 className="text-[28px]">{item.rent} </h1>{" "}
                   <span className="text-[16px] max-sm:text-center max-sm:text-[14px] font-mono font-bold  ml-3">
                     / rent per day
