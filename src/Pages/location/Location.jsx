@@ -11,7 +11,7 @@ const GoogleMap = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       title="Google Maps"
-      className="max-md:w-full w-full px-5 lg:mx-auto  max-md:m-0  max-sm:my-10 "
+      className="max-md:w-full w-full  px-5 lg:mx-auto mb-10 max-md:m-0  max-sm:my-10 "
     ></iframe>
   );
 };
