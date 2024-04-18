@@ -2,7 +2,7 @@ import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
 import { Link } from "react-router-dom";
-import useScrollToTop from "../../Hooks/UseScrollToTop";
+import useScrollToTop from "../../Hooks/useScrollToTop";
 const Vehicle = () => {
   const scrollToTop = useScrollToTop();
   return (
