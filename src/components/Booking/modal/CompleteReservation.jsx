@@ -28,7 +28,7 @@ const CompleteReservation = ({
           toll-free customer support number.
         </p>
       </section>
-      <section className="flex justify-between border-b-2 ">
+      <section className="flex max-sm:flex-col justify-between border-b-2 ">
         <section className="pl-7 pt-3 font-[Poppins]">
           <h1 className="text-[20px] text-[#ff4d30]"> Location & Date</h1>
           <p className="flex text-[18px] items-center gap-2 pt-2 font-bold">
