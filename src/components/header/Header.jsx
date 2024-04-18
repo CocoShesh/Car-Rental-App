@@ -51,11 +51,13 @@ function Header() {
       <header className="w-full flex items-center 2xl:justify-center justify-between px-10 h-[100px]  ">
         <section className=" w-full 2xl:w-[1440px] flex justify-between items-centern">
           <section className="max-xl:flex max-xl:items-center max-xl:justify-between max-xl:w-full">
-            <img
-              src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
-              alt=""
-              className="w-[150px] h-full  object-contain  "
-            />
+            <Link to="/">
+              <img
+                src="https://car-rental-ten.vercel.app/static/media/logo.0ad964cb93ab30cc809d.png"
+                alt=""
+                className="w-[150px] h-full  object-contain  "
+              />{" "}
+            </Link>
             <GiHamburgerMenu
               onClick={showDrawer}
               className="max-xl:visible  xl:hidden text-3xl  text-black cursor-pointer"
