@@ -3,7 +3,7 @@ import "./style.css";
 function Download() {
   return (
     <>
-      <section className="download-section bg-[#f8f8f8] w-full   mb-20 max-md:w-full flex flex-col  ">
+      <section className="download-section bg-[#f8f8f8] w-full    max-md:w-full flex flex-col  ">
         <section className="w-[550px] mx-20   max-md:w-auto max-md:mx-5 max-md:text-center ">
           <h1 className="text-[42px] text-black mb-5 ">
             Download our app to get most out of it
