@@ -3,7 +3,7 @@ import picker from "./data";
 const Pick = () => {
   return (
     <>
-      <section className="flex flex-col items-center justify-center mt-32 text-gray-900 ">
+      <section className="flex flex-col items-center justify-center mt-32 max-sm:w-full max-sm:px-3 text-gray-900 ">
         <section className="text-center ">
           <h2 className="text-[24px]  mb-5"> Plan your trip now</h2>
           <h1 className="text-5xl  "> Quick & easy car rental</h1>
