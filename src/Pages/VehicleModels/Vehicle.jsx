@@ -3,6 +3,10 @@ import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
 import { Link } from "react-router-dom";
 const Vehicle = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <section className="relative ">
@@ -66,7 +70,10 @@ const Vehicle = () => {
                   </div>
                 </div>
                 <section className="flex items-center justify-center">
-                  <button className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90">
+                  <button
+                    onClick={scrollToTop}
+                    className="w-[300px] mx-5  mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90"
+                  >
                     {" "}
                     <Link to="/Contact"> Book Ride </Link>
                   </button>
