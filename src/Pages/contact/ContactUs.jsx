@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <>
       <HeaderPage />
-      <section className="absolute mx-10 top-[180px] z-10">
+      <section className="absolute mx-7  top-[180px] z-10">
         <h1 className="text-[42px]">Contact</h1>
         <p>
           <a href="/">
@@ -31,7 +31,7 @@ const ContactUs = () => {
           backgroundPositionY: "30%",
         }}
       >
-        <section className="w-[450px] max-md:w-auto max-md:mx-10 ">
+        <section className="w-[450px] max-md:w-auto max-md:mx-2 ">
           <section>
             <h1 className="text-[42px] mb-5">Need additional information?</h1>
             <p className="text-[#706f7b] text-[16px] font-sans mb-10 text-justify font-medium">
