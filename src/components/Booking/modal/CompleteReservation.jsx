@@ -55,7 +55,7 @@ const CompleteReservation = ({
             - {selectedDropOff}
           </p>
         </section>
-        <section className="mt-4">
+        <section className="mt-4  max-sm:mx-5">
           <section className="flex gap-3 font-[Poppins] font-bold ">
             <h1 className="text-[18px]  text-black">Car -</h1>
             <p className=" text-[18px] text-[#ff4d30]  font-bold mr-32">
