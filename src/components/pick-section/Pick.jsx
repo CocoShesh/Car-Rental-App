@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import cars from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import useScrollToTop from "../../Hooks/UseScrollToTop";
+import useScrollToTop from "../../Hooks/useScrollToTop";
 const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 
 function Pick() {
