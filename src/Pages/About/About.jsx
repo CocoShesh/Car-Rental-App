@@ -22,7 +22,7 @@ const About = () => {
           <span> / </span> About
         </p>
       </section>
-      <section className="lg:px-10 justify-center items-center flex  w-full  gap-10 bg-white  h-fit pt-44  max-md:flex-col max-md:w-full  max-md:items-center max-md:justify-center">
+      {/* <section className="lg:px-10 justify-center items-center flex  w-full  gap-10 bg-white  h-fit pt-44  max-md:flex-col max-md:w-full  max-md:items-center max-md:justify-center">
         <img
           src="	https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg"
           alt=""
@@ -65,7 +65,7 @@ const About = () => {
             </section>
           </section>
         </section>
-      </section>
+      </section> */}
       <section className="pt-44">
         <Plan />
       </section>
