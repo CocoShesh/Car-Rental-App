@@ -3,12 +3,10 @@ import { useNavigate } from "react-router-dom";
 import cars from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import useScrollToTop from "../../Hooks/useScrollToTop";
 const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 
 function Pick() {
   const navigate = useNavigate();
-  const scrollToTop = useScrollToTop();
   const [filterCar, setFilterCar] = useState("Audi A1 S-Line");
 
   const handleCarSelection = carName => {
@@ -120,10 +118,7 @@ function Pick() {
                     </div>
                   </div>
                 </section>
-                <button
-                  onClick={scrollToTop}
-                  className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95"
-                >
+                <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95">
                   Reserve Now
                 </button>
               </div>
