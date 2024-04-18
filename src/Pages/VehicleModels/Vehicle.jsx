@@ -2,11 +2,9 @@ import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../../Hooks/UseScrollToTop";
 const Vehicle = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
+  const scrollToTop = useScrollToTop();
   return (
     <>
       <section className="relative ">
