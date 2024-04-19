@@ -11,7 +11,7 @@ const PersonalInformation = () => {
           Personal Information
         </h1>
         <section>
-          <section className="grid grid-cols-2 mt-5 text-[#777777] text-[16px] font-bold gap-5">
+          <section className="grid grid-cols-2 max-sm:grid-cols-1 mt-5 text-[#777777] text-[16px] font-bold gap-5">
             <section>
               <label htmlFor="Fname" className="">
                 First Name *
@@ -40,7 +40,7 @@ const PersonalInformation = () => {
               {message}
             </section>
           </section>
-          <section className="grid grid-cols-2 mt-5 text-[#777777] text-[16px] font-bold gap-5">
+          <section className="grid grid-cols-2  max-sm:grid-cols-1 mt-5 text-[#777777] text-[16px] font-bold gap-5">
             <section>
               <label htmlFor="Phone#">Phone Number *</label> <br />
               <input
@@ -87,7 +87,7 @@ const PersonalInformation = () => {
           />
           {message}
         </section>
-        <section className="grid grid-cols-2 gap-5  text-[#777777] text-[16px] font-bold mt-5">
+        <section className="grid grid-cols-2 gap-5  max-sm:grid-cols-1 text-[#777777] text-[16px] font-bold mt-5">
           <section>
             <label htmlFor="City"> City *</label>
             <input
