@@ -13,7 +13,7 @@ function ChooseSection() {
             <h1 className="text-[42px]  leading-[50px] ">
               Best valued deals you will ever find
             </h1>
-            <p className="text-[18px] text-justify text-[#706f7b] font-serif mt-5   ">
+            <p className="text-[18px] text-justify text-[#706f7b]  mt-5   ">
               Discover the best deals you'll ever find with our unbeatable
               offers. We're dedicated to providing you with the best value for
               your money, so you can enjoy top-quality services and products
@@ -42,7 +42,7 @@ function ChooseSection() {
                     <h1 className="text-[24px] mb-2 text-black">
                       {item.header}
                     </h1>
-                    <p className="text-[#706f7b] font-serif"> {item.content}</p>
+                    <p className="text-[#706f7b] "> {item.content}</p>
                   </section>
                 </section>
               );
