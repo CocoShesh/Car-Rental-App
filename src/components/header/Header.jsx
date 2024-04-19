@@ -116,7 +116,13 @@ function Header() {
             </ul>
           </section>
           <section className=" flex flex-col items-center  mt-[13rem]  ">
-            <button className="font-semibold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded  shadow-xl ">
+            <button
+              onClick={() => {
+                handleOpen();
+                onClose();
+              }}
+              className="font-semibold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded  shadow-xl "
+            >
               {" "}
               Sign In
             </button>
