@@ -25,8 +25,8 @@ const Date = ({ selectedPickUp, selectedCar, selectedDropOff }) => {
 
   return (
     <>
-      <section className="lg:flex gap-3 justify-between max-sm:flex-col mb-10 px-10 max-sm:px-5 items-center mt-5   text-gray-900 ">
-        <section className="w-full ">
+      <section className="lg:flex gap-3 font-[600] justify-between max-sm:flex-col mb-10 px-10 max-sm:px-5 items-center mt-5   text-gray-900 ">
+        <section className="w-full  ">
           <div className="flex items-center gap-3 max-sm:mx-3">
             <AiOutlineCalendar /> Pick-up Date
             <span className="text-orange-500"> *</span>
@@ -40,7 +40,7 @@ const Date = ({ selectedPickUp, selectedCar, selectedDropOff }) => {
             />
           </Space>
         </section>
-        <section className="w-full ">
+        <section className="w-full font-[600] ">
           <div className="flex items-center gap-3 max-sm:mx-3 ">
             <AiOutlineCalendar /> Drop off Date
             <span className="text-orange-500"> *</span>
