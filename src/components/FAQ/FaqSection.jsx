@@ -92,7 +92,7 @@ function FaqSection() {
         <Collapse
           accordion
           expandIconPosition="end"
-          className="w-[900px] text-lg  bg-white border-none shadow-2xl  mt-20  max-lg:w-full "
+          className="w-[900px] text-lg  bg-white border-none shadow-2xl  mt-20  max-lg:w-full select-none "
         >
           {items.map(item => (
             <Panel
@@ -100,11 +100,11 @@ function FaqSection() {
               header={item.label}
               style={{
                 border: "none",
-
+                fontFamily: "Rubik",
                 boxShadow: "1px 1px 1px 1px rgba(0,0,0,.1)",
                 paddingTop: "10px",
                 backgroundColor:
-                  clickedPanel === item.key ? "#ff4d30" : "inherit",
+                  clickedPanel === item.key ? "#ff4d3030" : "inherit",
               }}
               onClick={() => handlePanelClick(item.key)}
             >
