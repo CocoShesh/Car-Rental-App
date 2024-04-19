@@ -4,8 +4,6 @@ import { HiLocationMarker } from "react-icons/hi";
 import { type, pickUp, dropOf } from "./CarData.jsx";
 import Date from "./Date.jsx";
 
-import "/public/font.css";
-
 function BookingCar() {
   const [selectedPickUp, setSelectedPickUp] = useState("");
   const [selectedCar, setSelectedCar] = useState("");
@@ -24,7 +22,7 @@ function BookingCar() {
           </h1>
 
           <form onSubmit={handleSubmit}>
-            <section className="lg:flex max-sm:flex-col px-10 max-sm:px-5">
+            <section className="lg:flex max-sm:flex-col px-10 max-sm:px-5 font-[600]">
               <section className=" mb-5  sm:mr-2 w-full">
                 <div className="flex   items-center gap-3 mb-2 sm:mb-4">
                   <PiCarProfileBold className="text-[27px] ml-2" /> Select Your
