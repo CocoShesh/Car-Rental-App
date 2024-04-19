@@ -13,7 +13,9 @@ Welcome to our Car Rental platform, where finding and reserving your perfect ren
 ![Screenshot 2024-04-20 030740](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/3ad99b76-9068-40fd-9088-ab32a92867c5)
   
 ![Screenshot 2024-04-20 030932](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/93f0becd-3d80-4e34-a690-3a4c31d2efee)
-  
+
+![Screenshot 2024-04-20 030807](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/4bb1ccff-f273-4608-8fd4-ff62469511f6)
+
 ## Features
 
 - **Seamless Car Browsing:** Explore a wide selection of available cars with clear images and detailed descriptions.
