@@ -2,6 +2,18 @@
 
 Welcome to our Car Rental platform, where finding and reserving your perfect rental car is made easy!
 
+## Screenshots
+
+- [Homepage](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/2a643ac5-0fef-41c0-ab77-87388e11ea5f)
+   
+- [Car Listing Page](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/792125ed-de78-4862-b35d-869e0075def6)
+  
+- [Individual Car Detail Page](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/244998ec-f811-4e77-85aa-24289ee88d4f)
+  
+- [Reservation Process](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/3ad99b76-9068-40fd-9088-ab32a92867c5)
+  
+- [User login](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/93f0becd-3d80-4e34-a690-3a4c31d2efee) 
+  
 ## Features
 
 - **Seamless Car Browsing:** Explore a wide selection of available cars with clear images and detailed descriptions.
@@ -12,17 +24,6 @@ Welcome to our Car Rental platform, where finding and reserving your perfect ren
   
 - **User-Friendly Interface:** Navigate the website effortlessly thanks to a well-designed and intuitive layout.
 
-## Screenshots
-
-- [Homepage](Insert link to Screenshot 2024-04-20 030655)
-  
-- [Car Listing Page](Insert link to Screenshot 2024-04-20 030703)
-  
-- [Individual Car Detail Page](Insert link to Screenshot 2024-04-20 030740)
-  
-- [Reservation Process](Insert link to Screenshot 2024-04-20 030807)
-  
-- [User Profile/Dashboard](Insert link to Screenshot 2024-04-20 030932) – If applicable
 
 ## Getting Started
 
@@ -33,6 +34,7 @@ Welcome to our Car Rental platform, where finding and reserving your perfect ren
 3. **Select your desired car and dates.**
    
 4. **Complete the reservation process.**
+5. 
 
 ### Cloning the Repository
 
@@ -46,7 +48,7 @@ If you prefer to work with the code locally, you can clone the repository to you
 
    ```bash
    git clone https://github.com/your-username/repository-name.git
-Replace your-username with your GitHub username and repository-name with the name of the repository.
+
 4. Once the repository is cloned, navigate into the project directory:
    ```bash
-    cd repository-name
+   cd repository-name
