@@ -11,10 +11,6 @@
   width: 100%;
 }
 
-.content {
-  font-family: "Poppins", sans-serif;
-}
-
 @media screen and (max-width: 1080px) {
   .download-section {
     background: none;
