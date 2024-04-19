@@ -1,6 +1,6 @@
 # Car Rental 
 
-Welcome to our Car Rental platform, where finding and reserving your perfect rental car is made easy!
+Welcome  Car Rental platform, where finding and reserving your perfect rental car is made easy!
 
 ## Screenshots
 
