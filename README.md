@@ -4,15 +4,15 @@ Welcome to our Car Rental platform, where finding and reserving your perfect ren
 
 ## Screenshots
 
-- [Homepage]![Screenshot 2024-04-20 030655](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/2a643ac5-0fef-41c0-ab77-87388e11ea5f)
+![Screenshot 2024-04-20 030655](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/2a643ac5-0fef-41c0-ab77-87388e11ea5f)
    
-- [Car Listing Page]![Screenshot 2024-04-20 030703](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/792125ed-de78-4862-b35d-869e0075def6)
+![Screenshot 2024-04-20 030703](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/792125ed-de78-4862-b35d-869e0075def6)
   
-- [Individual Car Detail Page]![Screenshot 2024-04-20 030725](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/244998ec-f811-4e77-85aa-24289ee88d4f)
+![Screenshot 2024-04-20 030725](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/244998ec-f811-4e77-85aa-24289ee88d4f)
   
-- [Reservation Process]![Screenshot 2024-04-20 030740](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/3ad99b76-9068-40fd-9088-ab32a92867c5)
+![Screenshot 2024-04-20 030740](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/3ad99b76-9068-40fd-9088-ab32a92867c5)
   
-- [User login]![Screenshot 2024-04-20 030932](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/93f0becd-3d80-4e34-a690-3a4c31d2efee)
+![Screenshot 2024-04-20 030932](https://github.com/CocoShesh/Car-Rental-App/assets/110368170/93f0becd-3d80-4e34-a690-3a4c31d2efee)
   
 ## Features
 
