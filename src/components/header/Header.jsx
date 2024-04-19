@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Login from "../Authentication/Login/Login";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
-import "./style.css";
 import { Drawer } from "antd";
+import "./style.css";
 const list = [
   {
     id: 1,
@@ -39,6 +40,7 @@ const list = [
 function Header() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const showDrawer = () => {
     setOpen(true);
   };
@@ -46,6 +48,9 @@ function Header() {
     setOpen(false);
   };
 
+  const handleOpen = () => {
+    setIsOpen(prev => !prev);
+  };
   return (
     <>
       <header className="w-full flex items-center 2xl:justify-center justify-between lg:px-10  max-lg:px-5  h-[100px]  ">
@@ -80,7 +85,10 @@ function Header() {
             })}
           </ul>
           <section className="flex items-center gap-5 max-xl:hidden">
-            <button className="font-semibold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out ">
+            <button
+              onClick={handleOpen}
+              className="font-semibold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out "
+            >
               Sign In
             </button>
             <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg ">
@@ -118,6 +126,8 @@ function Header() {
           </section>
         </section>
       </Drawer>
+
+      {isOpen && <Login handleOpen={handleOpen} />}
     </>
   );
 }
