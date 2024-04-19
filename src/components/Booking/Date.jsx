@@ -69,7 +69,7 @@ const Date = ({ selectedPickUp, selectedCar, selectedDropOff }) => {
         onOk={handleOk}
         onCancel={handleCancel}
         bodyStyle={{
-          height: "500px",
+          // height: "500px"
           padding: 0,
           overflow: "scroll",
         }}
