@@ -36,7 +36,6 @@ Welcome to our Car Rental platform, where finding and reserving your perfect ren
 3. **Select your desired car and dates.**
    
 4. **Complete the reservation process.**
-5. 
 
 ### Cloning the Repository
 
