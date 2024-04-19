@@ -17,7 +17,7 @@ function Hero() {
               Save <span className="text-orange-500">big </span> with our car
               rental
             </h1>
-            <p className="mb-10 text-[#706f7b] text-[16px] font-serif ">
+            <p className="mb-10 text-[#706f7b] text-[16px] ">
               Rent the car of your dreams. Unbeatable prices, unlimited miles,
               flexible pick-up options and much more.
             </p>
