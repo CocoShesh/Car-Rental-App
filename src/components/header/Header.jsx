@@ -72,7 +72,7 @@ function Header() {
                     location.pathname === item.path
                       ? "text-[#ff4d30]"
                       : "text-black"
-                  } hover:text-[#ff4d30]  transition duration-500 ease-in-out cursor-pointer  font-seif text-lg  leading-10 font-bold`}
+                  } hover:text-[#ff4d30]  transition duration-500 ease-in-out cursor-pointer   text-lg  leading-10 font-semibold`}
                 >
                   <Link to={item.path}>{item.name}</Link>
                 </li>
@@ -80,10 +80,10 @@ function Header() {
             })}
           </ul>
           <section className="flex items-center gap-5 max-xl:hidden">
-            <button className="font-bold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out ">
+            <button className="font-semibold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out ">
               Sign In
             </button>
-            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg ">
+            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg ">
               Register
             </button>
           </section>
@@ -100,7 +100,7 @@ function Header() {
                     location.pathname === item.path
                       ? "text-[#ff4d30]"
                       : "text-white"
-                  } hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer  font-seif text-xl  leading-10 font-bold  `}
+                  } hover:text-[#ff4d30] transition duration-500 ease-in-out cursor-pointer   text-xl  leading-10 font-semibold  `}
                 >
                   <Link to={item.path}>{item.name}</Link>
                 </li>
@@ -108,11 +108,11 @@ function Header() {
             </ul>
           </section>
           <section className=" flex flex-col items-center  mt-[13rem]  ">
-            <button className="font-bold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded font-serif shadow-xl ">
+            <button className="font-semibold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded  shadow-xl ">
               {" "}
               Sign In
             </button>
-            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
+            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg ">
               Register
             </button>
           </section>
