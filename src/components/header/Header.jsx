@@ -80,10 +80,10 @@ function Header() {
             })}
           </ul>
           <section className="flex items-center gap-5 max-xl:hidden">
-            <button className="font-bold w-[150px]  h-10  text-xl  rounded font-serif hover:text-[#ff4d30] transition duration-500 ease-in-out ">
+            <button className="font-bold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out ">
               Sign In
             </button>
-            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg font-serif">
+            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-bold text-lg ">
               Register
             </button>
           </section>
