@@ -8,7 +8,7 @@ function Download() {
           <h1 className="text-[42px] text-black mb-5 ">
             Download our app to get most out of it
           </h1>
-          <p className=" content text-[#706f7b] text-[16px] font-serif">
+          <p className=" content text-[#706f7b] text-[16px] ">
             Thrown shy denote ten ladies though ask saw. Or by to he going think
             order event music. Incommode so intention defective at convinced.
             Led income months itself and houses you.
