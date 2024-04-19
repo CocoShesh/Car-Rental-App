@@ -8,7 +8,7 @@ function Footer() {
       <section className="grid lg:grid-cols-4  gap-14  pb-20  mx-10 text-black md:grid-cols-2 sm:grid-cols-1 ">
         <section>
           <h1 className="text-[24px] mb-5"> CAR Rental</h1>
-          <p className="text-[#706f7b] font-serif mb-10">
+          <p className="text-[#706f7b]  mb-10">
             We offers a big range of vehicles for all your driving needs. We
             have the perfect car to meet your needs.
           </p>
@@ -19,11 +19,11 @@ function Footer() {
             <AiOutlineMail className="text-[24px]" /> CarRentalInfo@gmail.com{" "}
           </div>
 
-          <p className="font-[Poppins]"> Design by Nard</p>
+          <p> Design by Nard</p>
         </section>
         <section className="ml-10 max-md:ml-0">
           <h1 className="text-[24px] mb-4"> COMPANY</h1>
-          <div className="font-[Poppins]">
+          <div>
             <p>New York</p>
             <p>Careers</p>
             <p>Mobile</p>
@@ -33,7 +33,7 @@ function Footer() {
         </section>
         <section>
           <h1 className="text-[24px] mb-4">WORKING HOURS</h1>
-          <div className="font-[Poppins]">
+          <div>
             <p>Mon - Fri: 9:00AM - 9:00PM</p>
             <p>Sat: 9:00AM - 19:00PM</p>
             <p>Sun: Closed</p>
@@ -41,12 +41,12 @@ function Footer() {
         </section>
         <section>
           <h1 className="text-[24px] mb-4">SUBSCRIPTION</h1>
-          <div className="font-[Poppins]">
+          <div>
             <p>Subscribe your Email address for latest news & updates.</p>
             <input
               type="email"
               placeholder="Enter Email Address"
-              className="w-full bg-base-200 h-[50px] my-7 pl-5"
+              className="w-full bg-white border border-slate-200  rounded-lg h-[50px] my-7 pl-5"
             />
             <button className="w-full h-[50px] bg-[#ff4d30] text-white">
               Submit
