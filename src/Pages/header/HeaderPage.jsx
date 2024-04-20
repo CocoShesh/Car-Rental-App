@@ -1,12 +1,14 @@
 import React from "react";
-import "./styling.css";
 import Header from "../../components/header/Header";
-const HeaderPage = () => {
+const HeaderPage = ({ children }) => {
   return (
     <>
-      <section className="top z-10 max-md:w-full max-md:z-[1] w-screen  max-md:bg-white">
-        <Header />
-        <section className="overlay  "> </section>
+      <section className=" relative  h-[250px] w-full  bg-header-overlay bg-cover">
+        <section className="absolute  z-10 top-0 left-0 w-full h-[250px]   bg-[#fef4eeee]"></section>
+        <section className=" absolute z-20 top-0 w-full flex items-center justify-center ">
+          <Header />
+          {children}
+        </section>
       </section>
     </>
   );
