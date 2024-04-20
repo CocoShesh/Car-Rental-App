@@ -1,10 +1,12 @@
 import React from "react";
 import { IoIosClose } from "react-icons/io";
 import AuthenticationModal from "../../Ui/AuthenticationModal ";
-import InputField from "../../Ui/InputField";
 import SocialIcons from "../../Ui/SocialIcons";
+import InputField from "../../Ui/InputField";
+import { useModal } from "../../../context/HandleModalContext";
 
-const Login = ({ handleOpenLogin, handleOpenRegister }) => {
+const Login = () => {
+  const { handleOpenRegister, handleOpenLogin } = useModal();
   return (
     <>
       <AuthenticationModal>
