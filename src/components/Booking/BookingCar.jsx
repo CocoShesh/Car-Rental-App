@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PiCarProfileBold } from "react-icons/pi";
 import { HiLocationMarker } from "react-icons/hi";
-import { type, pickUp, dropOf } from "./CarData.jsx";
+import { type, pickUp, dropOf } from "./CarData.js";
 import Date from "./Date.jsx";
 
 function BookingCar() {
