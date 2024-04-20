@@ -7,7 +7,7 @@ const icons = [
 ];
 const SocialIcons = () => {
   return (
-    <section className="flex gap-10 items-center justify-center">
+    <section className="flex gap-10 items-center  justify-around mx-5">
       {icons.map((icon, index) => (
         <section
           key={index}
