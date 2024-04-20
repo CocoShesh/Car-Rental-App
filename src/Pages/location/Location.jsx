@@ -1,5 +1,4 @@
 import React from "react";
-import "./mediaQuerystyling.css";
 const GoogleMap = () => {
   return (
     <iframe
