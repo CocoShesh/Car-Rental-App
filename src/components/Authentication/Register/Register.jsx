@@ -1,6 +1,5 @@
 import React from "react";
 import { IoIosClose } from "react-icons/io";
-import { MdOutlineAccountCircle, MdOutlineLockPerson } from "react-icons/md";
 import AuthenticationModal from "../../Ui/AuthenticationModal ";
 import InputField from "../../Ui/InputField";
 import SocialIcons from "../../Ui/SocialIcons";
