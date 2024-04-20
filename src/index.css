@@ -26,3 +26,58 @@ body {
 .ant-modal {
   top: 1rem;
 }
+
+.ant-drawer-header-title {
+  width: 100%;
+  position: relative;
+  border: none;
+}
+.ant-drawer-header {
+  border-bottom: none !important;
+}
+
+.ant-drawer-close {
+  position: absolute;
+  right: -10px;
+  padding-top: 1rem;
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.ant-drawer-content {
+  background-color: black !important;
+}
+
+@media (max-width: 640px) {
+  .google-map-iframe {
+    margin-inline: 0 !important;
+  }
+}
+
+.clicked-header {
+  background-color: #ff4d30;
+  border: 1px solid #ff4d30;
+}
+
+.faq-section {
+  background-image: url("https://car-rental-ten.vercel.app/static/media/car.5e21eedbea3280311aff.png");
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+}
+
+.download-section {
+  background-color: #f8f8f8;
+  background-image: url("https://car-rental-ten.vercel.app/static/media/bg02.3efbc4567749d0a5671e.png");
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 10rem 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .download-section {
+    background: none;
+  }
+}
