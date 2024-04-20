@@ -1,43 +1,47 @@
 import React from "react";
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
-import { Link } from "react-router-dom";
 const Vehicle = () => {
   const scrollToTop = () => {
     Navigate("/Contact");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <>
-      <section className="relative ">
-        <HeaderPage />
-      </section>
-      <section className="absolute  mx-10 top-[180px] z-10 ">
-        <h1 className="text-[42px] "> Vehicle models</h1>
-        <p>
-          <a href="/">
-            <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
-              Home
-            </span>
-          </a>
-          <span> / </span> Vechicle Models
-        </p>
-      </section>
-      <section className="bg-white pt-3  px-5 my-10 ">
-        <section className="grid  sm:grid-cols-1 md:grid-cols-2   lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-5 xl:grid-cols-3  gap-5   2xl:grid-cols-4  max-sm:w-full   ">
+      <HeaderPage>
+        <section className="absolute   top-[140px] 2xl:w-[1500px] w-full px-8 ">
+          <h1 className="text-[42px] "> Vehicle models</h1>
+          <p>
+            <a href="/">
+              <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
+                Home
+              </span>
+            </a>
+            <span> / </span> Vechicle Models
+          </p>
+        </section>
+      </HeaderPage>
+
+      <section className="bg-white pt-3  px-5 my-10 flex items-center justify-center ">
+        <section className="grid  sm:grid-cols-1 md:grid-cols-2   lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-3 xl:grid-cols-3  gap-5   2xl:grid-cols-3  2xl:w-[1500px]  max-sm:w-full   ">
           {cars.map(item => {
             return (
               <section
                 key={item.id}
-                className="h-fit  py-8  px-5    rounded shadow shadow-gray-500"
+                className="h-fit  py-8  px-5     rounded shadow shadow-gray-500"
               >
-                <img
-                  src={item.src}
-                  alt={item.Name}
-                  className="h-[350px] w-full mb-5  rounded-t-lg"
-                  loading="lazy | eager"
-                />
-
+                <section className="relative">
+                  <img
+                    src={item.src}
+                    alt={item.Name}
+                    className="h-[300px] w-full mb-5  rounded-lg object-cover"
+                    loading="lazy | eager"
+                  />
+                  <div className="w-fit h-fit px-3 flex gap-3  items-center py-2 absolute bottom-2 right-2 bg-black text-white rounded-sm cursor-pointer">
+                    <img src="/icon-view-image.svg" alt="" /> View Image
+                  </div>
+                </section>
                 <div className="flex justify-between text-black px-5 ">
                   <h1 className="text-[24px]"> {item.Name}</h1>
                   <h1 className="text-[28px] "> {item.rent_price}</h1>
@@ -77,8 +81,7 @@ const Vehicle = () => {
                     onClick={scrollToTop}
                     className="w-[300px] mx-5  max-md:w-full mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90"
                   >
-                    {" "}
-                    <Link to="/Contact"> Book Ride </Link>
+                    Book Ride
                   </button>
                 </section>
               </section>
