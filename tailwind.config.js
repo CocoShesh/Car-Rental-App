@@ -9,6 +9,8 @@ export default {
       },
       backgroundImage: {
         login: "url('/images/login-illustrator.png')",
+        "header-overlay":
+          "url(https://car-rental-ten.vercel.app/static/media/heroes-bg.71ab9a13d73de3860763.png)",
       },
     },
   },
