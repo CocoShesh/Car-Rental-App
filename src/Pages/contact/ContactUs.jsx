@@ -8,18 +8,19 @@ import Location from "../location/Location";
 const ContactUs = () => {
   return (
     <>
-      <HeaderPage />
-      <section className="absolute mx-7  top-[180px] z-10">
-        <h1 className="text-[42px]">Contact</h1>
-        <p>
-          <a href="/">
-            <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
-              Home
-            </span>
-          </a>
-          <span> / </span> Contact
-        </p>
-      </section>
+      <HeaderPage>
+        <section className="absolute mx-7  top-[140px] 2xl:w-[1500px] w-full px-8">
+          <h1 className="text-[42px]">Contact</h1>
+          <p>
+            <a href="/">
+              <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
+                Home
+              </span>
+            </a>
+            <span> / </span> Contact
+          </p>
+        </section>
+      </HeaderPage>
       <section
         className="bg-white flex gap-[150px] py-32 px-20 items-center justify-center  text-black  max-lg:flex-col max-md:w-full max-md:px-5"
         style={{
