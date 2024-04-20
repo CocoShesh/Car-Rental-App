@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 import { Drawer } from "antd";
-import "./style.css";
 import Login from "../Authentication/Login/Login";
 import Register from "../Authentication/Register/Register";
+import { useModal } from "../../context/HandleModalContext";
 const list = [
   {
     id: 1,
@@ -41,8 +41,8 @@ const list = [
 function Header() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
-  const [isOpenLogin, setIsOpenLogin] = useState(false);
-  const [isOpenRegister, setIsOpenRegister] = useState(false);
+  const { isOpenRegister, handleOpenRegister, isOpenLogin, handleOpenLogin } =
+    useModal();
   const showDrawer = () => {
     setOpen(true);
   };
@@ -50,13 +50,6 @@ function Header() {
     setOpen(false);
   };
 
-  const handleOpenLogin = () => {
-    setIsOpenLogin(prev => !prev);
-  };
-
-  const handleOpenRegister = () => {
-    setIsOpenRegister(prev => !prev);
-  };
   return (
     <>
       <header className="w-full flex items-center 2xl:justify-center justify-between lg:px-10  max-lg:px-5  h-[100px]  ">
@@ -107,7 +100,7 @@ function Header() {
         </section>
       </header>
       <Drawer placement="left" onClose={onClose} open={open} width={300}>
-        <section className=" flex flex-col justify-between">
+        <section className=" flex flex-col justify-between h-full pb-10">
           <section className="px-10 tracking-wides mt-5">
             <ul>
               {list.map(item => (
@@ -135,25 +128,21 @@ function Header() {
               {" "}
               Sign In
             </button>
-            <button className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg ">
+            <button
+              onClick={() => {
+                handleOpenRegister();
+                onClose();
+              }}
+              className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg "
+            >
               Register
             </button>
           </section>
         </section>
       </Drawer>
 
-      {isOpenLogin && (
-        <Login
-          handleOpenLogin={handleOpenLogin}
-          handleOpenRegister={handleOpenRegister}
-        />
-      )}
-      {isOpenRegister && (
-        <Register
-          handleOpenLogin={handleOpenLogin}
-          handleOpenRegister={handleOpenRegister}
-        />
-      )}
+      {isOpenLogin && <Login />}
+      {isOpenRegister && <Register />}
       {}
     </>
   );
