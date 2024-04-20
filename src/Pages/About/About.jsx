@@ -1,27 +1,23 @@
 import React from "react";
-import "../header/styling.css";
-import Header from "../../components/header/Header";
 import Plan from "../../components/plan-section/Plan";
-import Banner from "../../components/banner/Banner";
-import Footer from "../../components/Footer/Footer";
 import HeaderPage from "../header/HeaderPage";
 const About = () => {
   return (
     <>
-      <section className="relative">
-        <HeaderPage />
-      </section>
-      <section className="absolute  mx-10 top-[180px] z-10">
-        <h1 className="text-[42px] "> About</h1>
-        <p>
-          <a href="/">
-            <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
-              Home
-            </span>
-          </a>
-          <span> / </span> About
-        </p>
-      </section>
+      <HeaderPage>
+        <section className="absolute  mx-10 top-[140px]  2xl:w-[1500px] w-full px-8">
+          <h1 className="text-[42px] "> About</h1>
+          <p>
+            <a href="/">
+              <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
+                Home
+              </span>
+            </a>
+            <span> / </span> About
+          </p>
+        </section>
+      </HeaderPage>
+
       {/* <section className="lg:px-10 justify-center items-center flex  w-full  gap-10 bg-white  h-fit pt-44  max-md:flex-col max-md:w-full  max-md:items-center max-md:justify-center">
         <img
           src="	https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg"
