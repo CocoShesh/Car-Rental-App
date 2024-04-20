@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import cars from "./data";
+import cars from "./data.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
