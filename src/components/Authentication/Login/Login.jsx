@@ -3,12 +3,7 @@ import { IoIosClose } from "react-icons/io";
 import AuthenticationModal from "../../Ui/AuthenticationModal ";
 import InputField from "../../Ui/InputField";
 import SocialIcons from "../../Ui/SocialIcons";
-const icons = [
-  "/logos/facebook.png",
-  "/logos/instagram.png",
-  "/logos/gmail.png",
-  "/logos/tik-tok.png",
-];
+
 const Login = ({ handleOpenLogin, handleOpenRegister }) => {
   return (
     <>
