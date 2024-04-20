@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { DatePicker, Space } from "antd";
-import { Button, Modal } from "antd";
+import { Modal } from "antd";
 
 import CompleteReservation from "./modal/CompleteReservation";
 import dayjs from "dayjs";
