@@ -4,18 +4,19 @@ import employees from "./data";
 const Team = () => {
   return (
     <>
-      <HeaderPage />
-      <section className="absolute  mx-10 top-[180px] z-10 ">
-        <h1 className="text-[42px] ">Our Team</h1>
-        <p>
-          <a href="/">
-            <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
-              Home
-            </span>
-          </a>
-          <span> / </span> Our Team
-        </p>
-      </section>
+      <HeaderPage>
+        <section className="absolute  mx-10 top-[140px]   2xl:w-[1500px] w-full px-8  ">
+          <h1 className="text-[42px] ">Our Team</h1>
+          <p>
+            <a href="/">
+              <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
+                Home
+              </span>
+            </a>
+            <span> / </span> Our Team
+          </p>
+        </section>
+      </HeaderPage>
       <section className="grid lg:grid-cols-3  lg:px-20 gap-10 w-full bg-white pt-32 sm:grid-cols-1 md:grid-cols-2 place-content-center sm:px-3">
         {employees.map(employee => {
           return (
