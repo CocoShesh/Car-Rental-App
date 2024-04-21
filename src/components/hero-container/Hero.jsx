@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { FaGreaterThan } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 function Hero() {
   return (
     <>
@@ -24,7 +24,9 @@ function Hero() {
             </p>
             <section className="flex gap-5   max-sm:items-center max-sm:justify-center max-sm:w-full">
               <button className="w-[200px] max-sm:w-full  h-[70px] rounded bg-[#ff4d30] text-white font-bold items-center justify-center gap-2 flex shadow-xl  ">
-                <a href="#booking">Book Ride </a>{" "}
+                <Link to="booking" smooth={true}>
+                  Book Ride{" "}
+                </Link>{" "}
                 <AiOutlineCheckCircle className="mt-1 text-xl" />
               </button>
               <button className="w-[200px] max-sm:w-full  h-[70px]  text-[16px] rounded bg-black text-white font-bold items-center justify-center gap-2 flex shadow-xl hover:bg-white hover:text-black border-2 border-black transition duration-500 ease-in-out cursor-pointer">
