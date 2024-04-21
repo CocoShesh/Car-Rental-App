@@ -25,6 +25,7 @@ body {
 
 .ant-modal {
   top: 1rem;
+  font-family: "Rubik", sans-serif;
 }
 
 .ant-drawer-header-title {
@@ -35,7 +36,9 @@ body {
 .ant-drawer-header {
   border-bottom: none !important;
 }
-
+.ant-modal-footer {
+  visibility: hidden;
+}
 .ant-drawer-close {
   position: absolute;
   right: -10px;
