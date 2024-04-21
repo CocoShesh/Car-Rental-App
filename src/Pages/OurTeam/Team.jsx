@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderPage from "../header/HeaderPage";
-import employees from "./data";
+import employees from "./data.js";
+import { Link } from "react-router-dom";
 const Team = () => {
   return (
     <>
@@ -8,11 +9,11 @@ const Team = () => {
         <section className="absolute  mx-10 top-[140px]   2xl:w-[1500px] w-full px-8  ">
           <h1 className="text-[42px] ">Our Team</h1>
           <p>
-            <a href="/">
+            <Link to="/">
               <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
                 Home
               </span>
-            </a>
+            </Link>
             <span> / </span> Our Team
           </p>
         </section>
