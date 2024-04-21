@@ -33,7 +33,7 @@ function BookingCar() {
 
   return (
     <>
-      <section className=" lg:px-10 w-full 2xl:w-[1600px]" id="booking">
+      <section className=" lg:px-10 w-full 2xl:w-[1600px]  pt-10" id="booking">
         <section className=" flex flex-col h-fit  max-sm:mt-10  text-gray-900  bg-[#ffffff] mb-5 custom-shadow rounded-lg   w-full   ">
           <h1 className="text-[24px] text-[#000000] font-bold mb-5 px-10 pt-10 max-sm:px-5">
             Book a car
