@@ -66,6 +66,7 @@ function Pick() {
                 src={image.src}
                 alt=""
                 className=" w-[600px] "
+                loading="lazy"
               />
             ))}
           </section>
