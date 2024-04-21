@@ -37,7 +37,7 @@ const Login = () => {
             Login
           </button>
           <span className="text-center text-sm mt-[-5px] text-[#686464a6]">
-            No account yet?
+            No account yet?{" "}
             <span
               onClick={() => {
                 handleOpenRegister();
