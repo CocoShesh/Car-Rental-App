@@ -17,6 +17,7 @@ const SocialIcons = () => {
             src={icon}
             alt={`Social Media Icon ${index}`}
             className="w-8 h-8 "
+            loading="lazy"
           />
         </section>
       ))}
