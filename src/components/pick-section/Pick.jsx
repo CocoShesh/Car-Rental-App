@@ -9,6 +9,7 @@ const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 function Pick() {
   const navigate = useNavigate();
   const [filterCar, setFilterCar] = useState("Audi A1 S-Line");
+  const [loading, setLoading] = useState(true);
 
   const handleCarSelection = carName => {
     setFilterCar(carName);
@@ -25,6 +26,14 @@ function Pick() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  useEffect(() => {
+    setLoading(true); // Set loading state to true before fetching data
+
+    setTimeout(() => {
+      setLoading(false); // Set loading state to false after fetching data
+    }, 1000); // Simulated delay time
+  }, [filterCar]);
 
   return (
     <>
@@ -59,16 +68,20 @@ function Pick() {
           </section>
 
           <section className="flex-col lg:w-screen  max-sm:ml-0  mt-20 items-center flex max-sm:w-full  mb-20 justify-center ">
-            {filteredCars.map(image => (
-              <img
-                data-aos="flip-up"
-                key={image.id}
-                src={image.src}
-                alt=""
-                className=" w-[600px] "
-                loading="lazy"
-              />
-            ))}
+            {loading ? (
+              <div className="loader"> </div>
+            ) : (
+              filteredCars.map(image => (
+                <img
+                  data-aos="flip-up"
+                  key={image.id}
+                  src={image.src}
+                  alt=""
+                  className=" w-[600px] "
+                  loading="lazy"
+                />
+              ))
+            )}
           </section>
 
           <section
