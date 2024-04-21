@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import cars from "./data.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-scroll";
 const list = ["Model", "Mark", "Year", "Doors", "AC", "Transmission", "Fuel"];
 
 function Pick() {
@@ -20,6 +21,7 @@ function Pick() {
       return car.name === filterCar;
     }
   });
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -121,7 +123,10 @@ function Pick() {
                   </div>
                 </section>
                 <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95">
-                  <a href="#booking"> Reserve Now</a>
+                  <Link to="booking" smooth={true} duration={500}>
+                    {" "}
+                    Reserve Now
+                  </Link>
                 </button>
               </div>
             ))}
