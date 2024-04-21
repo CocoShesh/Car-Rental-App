@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
+import { Link } from "react-router-dom";
+import ViewImage from "./ViewImage/ViewImage.jsx";
 const Vehicle = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [openViewImage, setOpenViewImage] = useState(false);
   const scrollToTop = () => {
     Navigate("/Contact");
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleSelectedImage = item => {
+    setSelectedImage(item);
+    setOpenViewImage(true);
   };
 
   return (
@@ -13,11 +22,11 @@ const Vehicle = () => {
         <section className="absolute   top-[140px] 2xl:w-[1500px] w-full px-8 ">
           <h1 className="text-[42px] "> Vehicle models</h1>
           <p>
-            <a href="/">
+            <Link to="/">
               <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
                 Home
               </span>
-            </a>
+            </Link>
             <span> / </span> Vechicle Models
           </p>
         </section>
@@ -38,7 +47,10 @@ const Vehicle = () => {
                     className="h-[300px] w-full mb-5  rounded-lg object-cover"
                     loading="lazy | eager"
                   />
-                  <div className="w-fit h-fit px-3 flex gap-3  items-center py-2 absolute bottom-2 right-2 bg-black text-white rounded-sm cursor-pointer">
+                  <div
+                    onClick={() => handleSelectedImage(item.src)}
+                    className="w-fit h-fit px-3 flex gap-3  items-center py-2 absolute bottom-2 right-2 bg-black text-white rounded-sm cursor-pointer"
+                  >
                     <img src="/icon-view-image.svg" alt="" /> View Image
                   </div>
                 </section>
@@ -89,6 +101,12 @@ const Vehicle = () => {
           })}
         </section>
       </section>
+      {openViewImage && (
+        <ViewImage
+          selectedImage={selectedImage}
+          setOpenViewImage={setOpenViewImage}
+        />
+      )}
     </>
   );
 };
