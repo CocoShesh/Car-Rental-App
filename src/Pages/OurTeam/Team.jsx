@@ -31,6 +31,7 @@ const Team = () => {
                     src={employee.src}
                     alt={employee.Name}
                     className=" object-cover rounded-full"
+                    loading="lazy"
                   />
                 </div>
                 <div className="text-center pt-5 py-10 text-black bg-white rounded-b-xl ">
