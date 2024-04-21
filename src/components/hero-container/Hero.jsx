@@ -9,6 +9,7 @@ function Hero() {
         <div className="hero-content flex-col lg:flex-row-reverse max-w-[100rem] ">
           <img
             src="	https://car-rental-ten.vercel.app/static/media/main-car.9b30faa59387879fa060.png"
+            loading="lazy"
             className="max-w-xl  max-sm:max-w-xs rounded-lg 2xl:max-w-3xl "
           />
           <div className="text-black pr-4 lg:ml-5  ">
