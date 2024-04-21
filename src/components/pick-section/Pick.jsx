@@ -28,11 +28,11 @@ function Pick() {
   }, []);
 
   useEffect(() => {
-    setLoading(true); // Set loading state to true before fetching data
+    setLoading(true);
 
     setTimeout(() => {
-      setLoading(false); // Set loading state to false after fetching data
-    }, 1000); // Simulated delay time
+      setLoading(false);
+    }, 1000);
   }, [filterCar]);
 
   return (
