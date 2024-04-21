@@ -1,81 +1,75 @@
-import React, { useState } from "react";
-import { PiWarningCircleFill } from "react-icons/pi";
-import { HiLocationMarker } from "react-icons/hi";
+import React from "react";
 
-import Data from "./data";
-import PersonalInformation from "./PersonalInformation";
 const CompleteReservation = ({
-  selectedPickUp,
-  selectedCar,
-  selectedDropOff,
-  selectedDate,
-  selectedPickOffDate,
+  handleModal,
+  reservationDetails,
+  userInformation,
 }) => {
-  const [isCar, setIsCar] = useState(Data);
-
-  const filteredCars = isCar.filter(car => car.carName === selectedCar);
+  console.log("details", userInformation);
   return (
-    <div>
-      <section className="p-5 w-auto h-auto bg-[#ffeae6] mx-1  ">
-        <div className="flex gap-5 mb-5">
-          <PiWarningCircleFill className="fill-[#ff4d30] text-3xl" />
-          <p className="text-[#ff4d30] text-[19px] font-bold">
-            Upon completing this reservation enquiry, you will receive:
-          </p>
-        </div>
-        <p className="text-[17px] text-[#777777] font-[Poppins]">
-          Your rental voucher to produce on arrival at the rental desk and a
-          toll-free customer support number.
-        </p>
-      </section>
-      <section className="flex max-sm:flex-col justify-between border-b-2 ">
-        <section className="pl-7 pt-3 font-[Poppins]">
-          <h1 className="text-[20px] text-[#ff4d30]"> Location & Date</h1>
-          <p className="flex text-[18px] items-center gap-2 pt-2 font-bold">
-            <HiLocationMarker className="text-[25px]" /> Pick-Up Date & Time:
-          </p>
-          <p className="pl-10 text-[20px] text-[#777777]">- {selectedDate}</p>
+    <>
+      <section className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-10   bg-[#0000004b] text-black">
+        <section
+          data-aos="zoom-in"
+          className="w-[35rem] lg:h-[38rem]  2xl:h-fit max-sm:h-[37rem] max-sm:overflow-auto   bg-white border text-black rounded-2xl max-sm:rounded-lg p-10  max-sm:px-5 max-sm:mx-5  flex flex-col "
+        >
+          <div className=" text-xl font-[500] ">
+            <h1 className="text-[#b32510]  text-2xl ">Review Your Details </h1>
+            <section className="mt-5 pl-5">
+              {reservationDetails?.map((item, index) => {
+                return (
+                  <section className="flex items-center max-sm:flex-col max-sm:gap-2 ">
+                    <section className="w-full">
+                      <h1 key={index} className="text-[20px] ">
+                        {item?.label}
+                      </h1>
+                    </section>
+                    <section className="w-full max-sm:mb-3">
+                      <p className="flex text-[18px] justify-start  items-start gap-2  text-[#696464] pl-5 max-sm:pl-0">
+                        {item.value}
+                      </p>
+                    </section>
+                  </section>
+                );
+              })}
+            </section>
+          </div>
+          <div className=" text-xl  font-[500] mb-10 pl-5">
+            {Object.entries(userInformation).map(([key, value], index) => {
+              return (
+                <section className="flex items-center   max-sm:flex-col max-sm:gap-2">
+                  <section className="w-full  ">
+                    <h1 key={index} className="text-[20px]  capitalize">
+                      {key}:
+                    </h1>
+                  </section>
+                  <section className="w-full max-sm:mb-3 ">
+                    <p className="flex text-[18px] justify-start  items-start gap-2  text-[#696464] pl-5 max-sm:pl-0 ">
+                      {value}
+                    </p>
+                  </section>
+                </section>
+              );
+            })}
+          </div>
+          <section className=" flex-col flex gap-5">
+            <button
+              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-3 text-xl px-4 rounded"
+              onClick={handleModal}
+            >
+              Back
+            </button>
 
-          <p className="flex text-[18px] items-center gap-2 pt-2 mt-10 font-bold">
-            <HiLocationMarker className="text-[25px] " /> Pick-Up Date & Time:
-          </p>
-          <p className="pl-10 text-[20px] text-[#777777]">
-            -{selectedPickOffDate}
-          </p>
-
-          <p className="flex text-[18px] items-center gap-2 pt-2 mt-10 font-bold">
-            <HiLocationMarker className="text-[25px]" /> Pick-Up Location:
-          </p>
-          <p className="pl-10 text-[20px] text-[#777777]">- {selectedPickUp}</p>
-
-          <p className="flex text-[18px] items-center gap-2 pt-2 mt-10 font-bold">
-            <HiLocationMarker className="text-[25px]" /> Drop-Off Location:
-          </p>
-          <p className="pl-10 pb-20 text-[20px] text-[#777777] ">
-            - {selectedDropOff}
-          </p>
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 text-xl px-4 rounded"
+              onClick={handleModal}
+            >
+              Complete
+            </button>
+          </section>{" "}
         </section>
-        <section className="mt-4  max-sm:mx-5">
-          <section className="flex gap-3 font-[Poppins] font-bold ">
-            <h1 className="text-[18px]  text-black">Car -</h1>
-            <p className=" text-[18px] text-[#ff4d30]  font-bold mr-32">
-              {selectedCar}
-            </p>
-          </section>
-          {filteredCars.map((item, index) => {
-            return (
-              <img
-                key={index}
-                src={item.src}
-                alt={item.name}
-                className="w-[400px] mt-20 mr-10"
-              />
-            );
-          })}
-        </section>
       </section>
-      <PersonalInformation />
-    </div>
+    </>
   );
 };
 
