@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { TbLocation } from "react-icons/tb";
 import Location from "../location/Location";
+import { Link } from "react-router-dom";
 const ContactUs = () => {
   return (
     <>
@@ -12,11 +13,11 @@ const ContactUs = () => {
         <section className="absolute mx-7  top-[140px] 2xl:w-[1500px] w-full px-8">
           <h1 className="text-[42px]">Contact</h1>
           <p>
-            <a href="/">
+            <Link to="/">
               <span className="hover:text-orange-500 ease-in-out transition duration-500 cursor-pointer">
                 Home
               </span>
-            </a>
+            </Link>
             <span> / </span> Contact
           </p>
         </section>
