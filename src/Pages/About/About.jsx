@@ -23,7 +23,8 @@ const About = () => {
         <section className="flex items-center justify-center mx-36  max-lg:flex-col   max-lg:w-full  max-md:px-3    gap-10 2xl:w-[1200px]">
           <img
             src="	https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg"
-            alt=""
+            alt="company-about"
+            loading="lazy"
             className="w-fit h-full object-contain "
           />
           <section className="w-full h-full text-black  pr-10  ">
