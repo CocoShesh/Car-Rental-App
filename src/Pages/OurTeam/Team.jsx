@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <>
       <HeaderPage>
-        <section className="absolute  mx-10 top-[140px]   2xl:w-[1500px] w-full px-8  ">
+        <section className="absolute  mx-10 top-[140px]   2xl:w-[1500px] w-full px-8  select-none ">
           <h1 className="text-[42px] ">Our Team</h1>
           <p>
             <Link to="/">
@@ -19,7 +19,7 @@ const Team = () => {
         </section>
       </HeaderPage>
       <section className="flex items-center justify-center">
-        <section className="grid lg:grid-cols-3  lg:px-20 gap-10   2xl:w-[1600px]  w-full bg-white pt-32 sm:grid-cols-1 md:grid-cols-2 place-content-center sm:px-3">
+        <section className="grid lg:grid-cols-3  lg:px-20 gap-10   2xl:w-[1600px]  w-full select-none bg-white pt-32 sm:grid-cols-1 md:grid-cols-2 place-content-center sm:px-3">
           {employees.map(employee => {
             return (
               <section
