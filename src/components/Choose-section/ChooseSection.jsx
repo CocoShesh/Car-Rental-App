@@ -21,7 +21,7 @@ function ChooseSection() {
               ultimate renting experience, so don't miss out on your chance to
               save big.
             </p>
-            <button className="flex mt-10 rounded-lg shadow-xl items-center  justify-center gap-3 w-[200px] h-[60px] bg-[#ff4d30] text-white text-16px max-sm:mx-auto">
+            <button className="flex mt-10 rounded-lg shadow-xl items-center  justify-center gap-3 w-[200px] h-[60px] bg-[#ff4d30] text-white text-16px max-sm:mx-auto  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 hover:scale-105">
               Find Details <span className="text-2xl mb-1">&gt; </span>
             </button>
           </section>
