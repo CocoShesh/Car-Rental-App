@@ -16,12 +16,12 @@ function Download() {
             <img
               src="/images/appstore.svg"
               alt=" "
-              className="object-contain w-[300px]  max-sm:w-[300px] "
+              className="object-contain w-[300px]  max-sm:w-[300px]  cursor-pointer"
             />
             <img
               src="/images/googleapp.svg"
               alt=" "
-              className=" max-sm:w-[300px]   w-[300px]"
+              className=" max-sm:w-[300px]   w-[300px] cursor-pointer"
             />
           </div>
         </section>
