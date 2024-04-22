@@ -86,13 +86,13 @@ function Header() {
           <section className="flex items-center gap-5 max-xl:hidden">
             <button
               onClick={handleOpenLogin}
-              className="font-semibold w-[150px]  h-10  text-black text-xl  rounded  hover:text-[#ff4d30] transition duration-500 ease-in-out "
+              className="font-semibold w-[150px]  h-[50px] text-black text-xl  rounded  transition duration-300 ease-in-out transform hover:bg-black hover:text-white hover:border hover:border-gray-500 hover:scale-105 "
             >
               Sign In
             </button>
             <button
               onClick={handleOpenRegister}
-              className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg "
+              className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 hover:scale-105"
             >
               Register
             </button>
@@ -117,15 +117,14 @@ function Header() {
               ))}
             </ul>
           </section>
-          <section className=" flex flex-col items-center  mt-[13rem]  ">
+          <section className="flex flex-col items-center mt-[13rem]">
             <button
               onClick={() => {
                 handleOpenLogin();
                 onClose();
               }}
-              className="font-semibold w-[150px] h-[50px] bg-white text-black  text-xl mb-5 rounded  shadow-xl "
+              className="font-semibold w-[150px] h-[50px] bg-white text-black text-xl mb-5 rounded shadow-xl transition duration-300 ease-in-out transform hover:bg-black hover:text-white hover:scale-105"
             >
-              {" "}
               Sign In
             </button>
             <button
@@ -133,7 +132,7 @@ function Header() {
                 handleOpenRegister();
                 onClose();
               }}
-              className=" rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg "
+              className="rounded shadow-xl w-[150px] h-[50px] bg-[#ff4d30] text-white font-semibold text-lg transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 hover:scale-105"
             >
               Register
             </button>
