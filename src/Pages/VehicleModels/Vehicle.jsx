@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
 import HeaderPage from "../header/HeaderPage";
 import { cars, star } from "./Data";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ViewImage from "./ViewImage/ViewImage.jsx";
 const Vehicle = () => {
+  const Navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
   const [openViewImage, setOpenViewImage] = useState(false);
   const scrollToTop = () => {
@@ -19,7 +21,7 @@ const Vehicle = () => {
   return (
     <>
       <HeaderPage>
-        <section className="absolute   top-[140px] 2xl:w-[1500px] w-full px-8 ">
+        <section className="absolute   top-[140px] 2xl:w-[1500px] w-full px-8 select-none ">
           <h1 className="text-[42px] "> Vehicle models</h1>
           <p>
             <Link to="/">
@@ -32,7 +34,7 @@ const Vehicle = () => {
         </section>
       </HeaderPage>
 
-      <section className="bg-white pt-3  px-5 my-10 flex items-center justify-center ">
+      <section className="bg-white pt-3  px-5 my-10 flex items-center justify-center select-none ">
         <section className="grid  sm:grid-cols-1 md:grid-cols-2   lg:grid-cols-3 2xl:mt-20 3xl:grid-cols-3 xl:grid-cols-3  gap-5   2xl:grid-cols-3  2xl:w-[1500px]  max-sm:w-full   ">
           {cars.map(item => {
             return (
@@ -91,7 +93,7 @@ const Vehicle = () => {
                 <section className="flex items-center justify-center">
                   <button
                     onClick={scrollToTop}
-                    className="w-[300px] mx-5  max-md:w-full mt-10 text-white  h-[70px] font-extrabold text-[20px] font-[Poppins] shadow-xl cursor-pointer rounded-md bg-[#ff4d30] hover:scale-95 hover:opacity-90"
+                    className="w-[300px] mx-5  max-md:w-full mt-10 text-white  h-[70px] font-extrabold text-[20px]  shadow-xl cursor-pointer rounded-md bg-[#ff4d30]  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 hover:scale-105"
                   >
                     Book Ride
                   </button>
