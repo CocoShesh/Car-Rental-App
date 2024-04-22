@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import CompleteReservation from "./CompleteReservation";
-import { useModal } from "../../../context/HandleModalContext";
 
 const ReviewDetails = ({
   handleModal,
@@ -9,15 +8,6 @@ const ReviewDetails = ({
 }) => {
   const [showFullText, setShowFullText] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 2000);
-
-  //   return () => clearTimeout(timeout);
-  // }, [isCompleted]);
 
   const handleCompleted = () => {
     setIsCompleted(true);
@@ -25,12 +15,6 @@ const ReviewDetails = ({
 
   return (
     <>
-      {/* {isLoading && (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 bg-[#0000004b]">
-          <div className="loader"></div>
-        </div>
-      )} */}
-      {/* {!isLoading && ( */}
       <section className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-10   bg-[#0000004b] text-black">
         <section
           data-aos="zoom-in"
@@ -96,10 +80,9 @@ const ReviewDetails = ({
             >
               Complete
             </button>
-          </section>{" "}
+          </section>
         </section>
       </section>
-      {/* )} */}
       {isCompleted && <CompleteReservation handleCompleted={handleCompleted} />}
     </>
   );
