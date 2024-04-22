@@ -131,6 +131,7 @@ function BookingCar() {
                 <input
                   type="date"
                   {...register("pickUpDate")}
+                  defaultValue={"mm / dd / yyyy"}
                   className="w-full  mt-3 h-[50px] bg-white border-slate-300 border-2  text-sm   font-bold text-black rounded-lg px-5"
                 />
                 {errors?.pickUpDate && (
@@ -147,6 +148,7 @@ function BookingCar() {
                 <input
                   type="date"
                   {...register("dropOffDate")}
+                  defaultValue={"mm / dd / yyyy"}
                   className="w-full  mt-3 h-[50px] bg-white border-slate-300 border-2  font-bold text-black rounded-lg text-sm px-5"
                 />
                 {errors?.dropOffDate && (
