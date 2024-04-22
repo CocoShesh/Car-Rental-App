@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <HeaderPage>
-        <section className="absolute  mx-10 top-[140px]  2xl:w-[1500px] w-full px-8">
+        <section className="absolute  mx-10 top-[140px]  2xl:w-[1500px] w-full px-8 select-none">
           <h1 className="text-[42px] "> About</h1>
           <p>
             <Link to="/">
@@ -19,17 +19,17 @@ const About = () => {
         </section>
       </HeaderPage>
 
-      <section className="flex  items-center justify-center  w-full h-[500px] max-lg:h-full  mt-10  ">
-        <section className="flex items-center justify-center mx-36  max-lg:flex-col   max-lg:w-full  max-md:px-3    gap-10 2xl:w-[1200px]">
+      <section className="flex  items-center justify-center  w-full h-[500px] max-lg:h-full  mt-10  select-none ">
+        <section className="flex items-center justify-center mx-36  max-lg:flex-col   max-lg:w-full  max-md:px-3 max-md:mx-3    gap-10 2xl:w-[1200px]">
           <img
             src="	https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg"
             alt="company-about"
             loading="lazy"
             className="w-fit h-full object-contain "
           />
-          <section className="w-full h-full text-black  pr-10  ">
+          <section className="w-full h-full text-black  pr-10 max-sm:pr-0 ">
             <h2 className="text-[22px]">About Company</h2>
-            <h1 className="text-5xl leading-[3.5rem] font-[600]">
+            <h1 className="text-5xl leading-[3.5rem] font-[600] ">
               You start the engine and your adventure begins
             </h1>
             <p className="text-[#866f7b] mt-5">
@@ -39,7 +39,7 @@ const About = () => {
               imprudence no precaution. My indulged as disposal strongly
               attended.
             </p>
-            <section className="flex gap-10 mt-10 ">
+            <section className="flex max-sm:grid max-sm:grid-cols-2 gap-10 mt-10 ">
               <section>
                 <img src="/public/images/broom.png" alt="" />
                 <section className="flex items-center gap-4 mt-5">
