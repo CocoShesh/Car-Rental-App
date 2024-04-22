@@ -33,7 +33,10 @@ function BookingCar() {
 
   return (
     <>
-      <section className=" lg:px-10 w-full 2xl:w-[1600px]  pt-10" id="booking">
+      <section
+        className=" lg:px-10 w-full 2xl:w-[1600px]  pt-10 max-sm:pt-0"
+        id="booking"
+      >
         <section className=" flex flex-col h-fit  max-sm:mt-10  text-gray-900  bg-[#ffffff] mb-5 custom-shadow rounded-lg   w-full   ">
           <h1 className="text-[24px] text-[#000000] font-bold mb-5 px-10 pt-10 max-sm:px-5">
             Book a car
@@ -47,11 +50,11 @@ function BookingCar() {
                   Car Type<span className="text-orange-500">*</span>
                 </div>
                 <select
-                  className="select w-full  bg-white border-slate-300 border-2"
+                  className="select w-full  bg-white  border-slate-300 border-2"
                   name="carType"
                   {...register("carType")}
                 >
-                  <option value="" defaultValue className="text-gray-500">
+                  <option value="" defaultValue className="text-gray-500 ">
                     Select your car type
                   </option>
                   {type.map((item, index) => (
@@ -155,7 +158,7 @@ function BookingCar() {
               <section className="flex w-full mt-9 items-center">
                 <button
                   type="submit"
-                  className="w-full  h-[50px] bg-orange-500 text-white  font-bold text-[20px] rounded-md shadow-lg"
+                  className="w-full  h-[50px] bg-orange-500 text-white  font-bold text-[20px] rounded-md shadow-lg  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500"
                 >
                   Search
                 </button>
