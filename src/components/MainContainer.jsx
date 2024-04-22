@@ -13,7 +13,7 @@ import Download from "./downloadSection/Download";
 function MainContainer() {
   return (
     <>
-      <main className=" flex flex-col  w-full   items-center justify-center ">
+      <main className=" flex flex-col  w-full   items-center justify-center select-none ">
         <Header />
         <Hero />
         <BookingCar />
