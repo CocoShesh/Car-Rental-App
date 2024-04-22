@@ -4,7 +4,7 @@ import { personalInfoSchema } from "../../../Schema/PersonalInfoSchema";
 import { useForm } from "react-hook-form";
 import { inputFields } from "../CarData";
 import InputField from "../InputField";
-import CompleteReservation from "./CompleteReservation";
+import ReviewDetails from "./ReviewDetails";
 const PersonalInformation = ({ reservationDetails }) => {
   const [openModal, setOpenModal] = useState(false);
   const [userInformation, setUserInformation] = useState([{}]);
@@ -80,7 +80,7 @@ const PersonalInformation = ({ reservationDetails }) => {
       </form>
 
       {openModal && (
-        <CompleteReservation
+        <ReviewDetails
           handleModal={handleModal}
           userInformation={userInformation}
           reservationDetails={reservationDetails}
