@@ -3,7 +3,7 @@ import profile from "./data.jsx";
 const Testimonials = () => {
   return (
     <>
-      <section className="h-fit bg-[#f8f8f8] py-28 w-full mb-10 max:sm:w-full max-sm:h-auto">
+      <section className="h-fit bg-[#f8f8f8] py-28 w-full mb-10 max:sm:w-full max-sm:h-auto select-none">
         <section className="flex flex-col items-center justify-center  text-black ">
           <h2 className="text-[22px]"> Reviewed by People</h2>
           <h1 className="text-[45px]  font-[700] max-sm:text-center">
