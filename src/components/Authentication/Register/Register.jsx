@@ -35,7 +35,7 @@ const Register = () => {
             placeholder="Confirm Password"
             icon="password"
           />
-          <button className="w-full h-fit py-3 bg-[#ff4e33] text-white text-xl font-medium rounded-lg hover:bg-[#ff4e33d3]">
+          <button className="w-full h-fit py-3 bg-[#ff4e33] text-white text-xl font-medium rounded-lg  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 ">
             Register
           </button>
           <span className="text-center text-sm mt-[-5px] text-[#686464a6]">
