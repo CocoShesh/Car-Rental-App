@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 function Footer() {
   return (
     <>
-      <section className="grid lg:grid-cols-4  gap-14  pb-20  mx-10 text-black md:grid-cols-2 sm:grid-cols-1 ">
+      <section className="grid lg:grid-cols-4  gap-14  pb-20  mx-10 text-black md:grid-cols-2 sm:grid-cols-1 select-none ">
         <section>
           <h1 className="text-[24px] mb-5"> CAR Rental</h1>
           <p className="text-[#706f7b]  mb-10">
@@ -43,14 +43,17 @@ function Footer() {
           <h1 className="text-[24px] mb-4">SUBSCRIPTION</h1>
           <div>
             <p>Subscribe your Email address for latest news & updates.</p>
-            <input
-              type="email"
-              placeholder="Enter Email Address"
-              className="w-full bg-white border border-slate-200  rounded-lg h-[50px] my-7 pl-5"
-            />
-            <button className="w-full h-[50px] bg-[#ff4d30] text-white">
-              Submit
-            </button>
+            <form onSubmit={e => e.preventDefault()}>
+              <input
+                type="email"
+                placeholder="Enter Email Address"
+                required
+                className="w-full bg-white border border-slate-200  rounded-lg h-[50px] my-7 pl-5"
+              />
+              <button className="w-full h-[50px] bg-[#ff4d30] text-white  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 ">
+                Submit
+              </button>
+            </form>
           </div>
         </section>
       </section>
