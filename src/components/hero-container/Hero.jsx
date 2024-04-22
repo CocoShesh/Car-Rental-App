@@ -2,7 +2,9 @@ import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { FaGreaterThan } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 function Hero() {
+  const Navigate = useNavigate();
   return (
     <>
       <div className="hero h-fit mb-20 mt-20">
@@ -23,13 +25,18 @@ function Hero() {
               flexible pick-up options and much more.
             </p>
             <section className="flex gap-5   max-sm:items-center max-sm:justify-center max-sm:w-full">
-              <button className="w-[200px] max-sm:w-full  h-[70px] rounded bg-[#ff4d30] text-white font-bold items-center justify-center gap-2 flex shadow-xl  ">
+              <button className="w-[200px] max-sm:w-full h-[70px] rounded bg-[#ff4d30] text-white font-bold items-center justify-center gap-2 flex shadow-xl transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 hover:scale-105">
                 <Link to="booking" smooth={true}>
-                  Book Ride{" "}
+                  Book Ride
                 </Link>{" "}
                 <AiOutlineCheckCircle className="mt-1 text-xl" />
               </button>
-              <button className="w-[200px] max-sm:w-full  h-[70px]  text-[16px] rounded bg-black text-white font-bold items-center justify-center gap-2 flex shadow-xl hover:bg-white hover:text-black border-2 border-black transition duration-500 ease-in-out cursor-pointer">
+              <button
+                onClick={() => {
+                  Navigate("/about");
+                }}
+                className="w-[200px] max-sm:w-full  h-[70px]  text-[16px] rounded bg-black text-white font-bold items-center justify-center gap-2 flex shadow-xl hover:bg-white hover:text-black border-2 border-black transition duration-500 ease-in-out cursor-pointer"
+              >
                 Learn More <FaGreaterThan className="mt-1" />
               </button>
             </section>
