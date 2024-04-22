@@ -136,7 +136,7 @@ function Pick() {
                     </div>
                   </div>
                 </section>
-                <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer hover:opacity-95">
+                <button className="w-full h-[50px] bg-orange-500 uppercase text-white shadow-xl cursor-pointer  transition duration-300 ease-in-out transform hover:bg-white hover:text-black hover:border hover:border-gray-500 ">
                   <Link to="booking" smooth={true} duration={500}>
                     {" "}
                     Reserve Now
